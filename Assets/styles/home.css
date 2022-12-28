@@ -1,0 +1,2502 @@
+/* Content */
+/* 
+1. Navbar Section
+2. Navbar Media Queries
+1. Banner Section
+2. Banner Media Queries
+3. Services Section
+4. Services Utilies
+5. Services Media Queries
+6. Work Section
+7. Work Media Queries
+*/
+/* Navbar Start */
+/* Navbar End */
+/* Banner Section */
+.banner-wrapper {
+  background-image: url("../../public/images/img-hero-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #f6f6f6;
+  top: 70px; }
+  .banner-wrapper .banner-left #banner-left-info {
+    font-family: "Urbanist",sans-serif;
+    font-weight: 700;
+    color: #fff; }
+  .banner-wrapper .banner-left .primary-highlight {
+    color: #FCBF49; }
+  .banner-wrapper .banner-left .banner-left-card .card {
+    border-radius: 5px; }
+    .banner-wrapper .banner-left .banner-left-card .card .content {
+      padding: 0px; }
+      .banner-wrapper .banner-left .banner-left-card .card .content .card-header {
+        font-family: "Urbanist",sans-serif;
+        text-align: center; }
+      .banner-wrapper .banner-left .banner-left-card .card .content .button {
+        width: 100%;
+        background: #FCBF49;
+        border: none;
+        border-radius: 5px;
+        font-family: "Urbanist",sans-serif;
+        font-weight: 600;
+        color: white; }
+        .banner-wrapper .banner-left .banner-left-card .card .content .button:hover {
+          cursor: pointer; }
+  .banner-wrapper .banner-right {
+    font-family: "Urbanist",sans-serif;
+    font-weight: bold; }
+    .banner-wrapper .banner-right ul li {
+      background: url("../../public/images/icon-check.png") no-repeat;
+      background-size: 20px;
+      background-position: left;
+      padding: 0 0 0 28px; }
+
+/* Banner Media Queries  */
+@media screen and (min-width: 220px) {
+  .banner-wrapper {
+    height: 552px;
+    background-image: url("../../public/images/logo-mobile.png"); }
+    .banner-wrapper .flex .banner-left {
+      width: 100%; }
+    .banner-wrapper .flex .banner-center {
+      width: 50%; }
+    .banner-wrapper .flex .banner-right {
+      width: 50%; }
+    .banner-wrapper .banner-left #banner-left-info {
+      font-size: 1.355rem;
+      line-height: 2.032rem;
+      text-align: center;
+      padding: 1.275rem 0rem 1.275rem 0rem; }
+    .banner-wrapper .banner-left .banner-left-card {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .banner-wrapper .banner-left .banner-left-card .card {
+        width: 90%;
+        position: absolute;
+        bottom: -22%;
+        padding: 0rem 1.7rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .card-header {
+          font-size: 1.116rem;
+          padding: 1.222rem 0rem 1.063rem 0rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .dropdown {
+          padding: 0.903rem;
+          margin-bottom: 0.42rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .button {
+          font-size: 0.8rem;
+          padding: 0.903rem 2.875rem 0.903rem 2.875rem;
+          margin-bottom: 1.438rem; }
+    .banner-wrapper .banner-middle {
+      position: relative; }
+      .banner-wrapper .banner-middle img {
+        width: 115%;
+        position: absolute;
+        left: -25%; }
+    .banner-wrapper .banner-right {
+      padding-right: 2.072rem;
+      padding-top: 10%; }
+      .banner-wrapper .banner-right ul li {
+        font-size: 0.797rem;
+        margin-bottom: 1.541rem; } }
+@media screen and (min-width: 320px) {
+  .banner-wrapper {
+    height: 552px;
+    background-position-y: -3.5rem; }
+    .banner-wrapper .flex .banner-left {
+      width: 100%; }
+    .banner-wrapper .flex .banner-center {
+      width: 50%; }
+    .banner-wrapper .flex .banner-right {
+      width: 50%; }
+    .banner-wrapper .banner-left #banner-left-info {
+      font-size: 1.355rem;
+      line-height: 2.032rem;
+      text-align: center;
+      padding: 1.275rem 0rem 1.275rem 0rem; }
+    .banner-wrapper .banner-left .banner-left-card {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .banner-wrapper .banner-left .banner-left-card .card {
+        width: 90%;
+        position: absolute;
+        bottom: 6%;
+        padding: 0rem 1.7rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .card-header {
+          font-size: 1.116rem;
+          padding: 1.222rem 0rem 1.063rem 0rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .dropdown {
+          padding: 0.903rem;
+          margin-bottom: 0.42rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .button {
+          font-size: 0.8rem;
+          padding: 0.903rem 2.875rem 0.903rem 2.875rem;
+          margin-bottom: 1.438rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .home-search-input .ui input {
+          margin-bottom: 0.65rem; }
+      .banner-wrapper .banner-left .banner-left-card .banner-postcode-input {
+        padding-bottom: 1rem; }
+    .banner-wrapper .banner-middle {
+      position: relative; }
+      .banner-wrapper .banner-middle img {
+        width: 115%;
+        position: absolute;
+        left: -25%; }
+    .banner-wrapper .banner-right {
+      padding-right: 2.072rem;
+      padding-top: 10%; }
+      .banner-wrapper .banner-right ul li {
+        font-size: 0.797rem;
+        margin-bottom: 1.541rem; } }
+@media screen and (min-width: 375px) {
+  .banner-wrapper {
+    height: 628px; }
+    .banner-wrapper .banner-left #banner-left-info {
+      font-size: 1.7rem;
+      line-height: 1.813rem;
+      padding: 1.5rem 1.688rem 1.5rem 1.688rem; }
+    .banner-wrapper .banner-left .banner-left-card .card {
+      bottom: 5%;
+      height: 232px;
+      padding: 0rem 2rem; }
+      .banner-wrapper .banner-left .banner-left-card .card .card-header {
+        font-size: 1.313rem;
+        padding: 1.438rem 0rem 1.25rem 0rem; }
+      .banner-wrapper .banner-left .banner-left-card .card .dropdown {
+        padding: 1.063rem;
+        margin-bottom: 0.5rem; }
+      .banner-wrapper .banner-left .banner-left-card .card .button {
+        font-size: 1rem;
+        padding: 1.063rem 2.875rem 1.063rem 2.875rem;
+        margin-bottom: 1.438rem; }
+    .banner-wrapper .banner-middle img {
+      width: 120%;
+      left: -20%; }
+    .banner-wrapper .banner-right {
+      padding-right: 2.438rem;
+      padding-top: 15%; }
+      .banner-wrapper .banner-right ul li {
+        font-size: 0.938rem;
+        margin-bottom: 1.813rem; } }
+@media screen and (min-width: 425px) {
+  .banner-wrapper {
+    background-position-y: -5.5rem; }
+    .banner-wrapper .banner-middle img {
+      width: 100%; }
+    .banner-wrapper .banner-right {
+      padding-top: 12%; }
+      .banner-wrapper .banner-right ul li {
+        font-size: 1.059rem; } }
+@media screen and (min-width: 512px) {
+  .banner-wrapper {
+    background-position-y: -9.5rem; }
+    .banner-wrapper .banner-middle img {
+      width: 80%;
+      left: -5%; } }
+@media screen and (min-width: 576px) {
+  .banner-wrapper .banner-middle img {
+    width: 80%;
+    left: -5%; } }
+@media screen and (min-width: 688px) {
+  .banner-wrapper .banner-middle img {
+    width: 70%;
+    left: -4%; } }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 656px; }
+
+  .banner-wrapper {
+    height: 400px;
+    background-image: url("../../public/images/img-hero-bg.png");
+    background-position-y: 0rem;
+    background-size: 100% 100%; }
+    .banner-wrapper .flex .banner-left {
+      width: 40%; }
+    .banner-wrapper .flex .banner-center {
+      width: 33.3%; }
+    .banner-wrapper .flex .banner-right {
+      width: 24%; }
+    .banner-wrapper .banner-left #banner-left-info {
+      font-size: 1.2rem;
+      line-height: 1.4em;
+      text-align: left;
+      padding: 5.575rem 0rem 1.225rem 0rem; }
+    .banner-wrapper .banner-left .banner-left-card {
+      display: block; }
+      .banner-wrapper .banner-left .banner-left-card .card {
+        width: 90%;
+        height: 100%;
+        position: static;
+        padding: 0rem 1.275rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .card-header {
+          font-size: 0.85rem;
+          padding: 0.825rem 0rem 1.125rem 0rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .dropdown {
+          padding: 0.861rem;
+          margin-bottom: 0.275rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .home-search-input .ui input {
+          margin-bottom: 0.65rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .button {
+          padding: 0.675rem 2.313rem 0.675rem 2.313rem;
+          margin-bottom: 0.925rem;
+          font-size: 0.7rem; }
+    .banner-wrapper .banner-middle {
+      padding-top: 30%; }
+      .banner-wrapper .banner-middle img {
+        width: 100%;
+        position: static;
+        display: block; }
+    .banner-wrapper .banner-right {
+      padding-right: 0rem;
+      padding-top: 18%; }
+      .banner-wrapper .banner-right ul li {
+        font-size: 1.093rem;
+        margin-bottom: 2.65rem; } }
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 869.2px; }
+
+  .banner-wrapper {
+    background-size: 100% 100%; }
+    .banner-wrapper .flex .banner-left {
+      width: 33.3%; }
+    .banner-wrapper .flex .banner-center {
+      width: 33.3%; }
+    .banner-wrapper .flex .banner-right {
+      width: 33.3%; }
+    .banner-wrapper .banner-left #banner-left-info {
+      width: 85%;
+      font-size: 1.391rem;
+      padding: 3.412rem 0rem 1.623rem 0rem; }
+    .banner-wrapper .banner-left .banner-left-card {
+      padding-right: 1.06rem; }
+      .banner-wrapper .banner-left .banner-left-card .card {
+        padding: 0rem 1.689rem;
+        height: 100%;
+        width: 100%; }
+        .banner-wrapper .banner-left .banner-left-card .card .card-header {
+          font-size: 0.696rem;
+          padding: 1.547rem 0rem 1.491rem 0rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .dropdown {
+          padding: 0.861rem;
+          margin-bottom: 0.364rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .button {
+          padding: 1.266rem 2.313rem 1.266rem 2.313rem;
+          margin-bottom: 1.226rem;
+          font-size: 0.7rem; }
+    .banner-wrapper .banner-middle {
+      padding: 41px 0px 41px 0px; }
+      .banner-wrapper .banner-middle img {
+        width: 100%; }
+    .banner-wrapper .banner-right {
+      padding-right: 2.438rem;
+      padding-top: 12%; }
+      .banner-wrapper .banner-right ul li {
+        font-size: 1.093rem;
+        margin-bottom: 2.65rem;
+        background-size: 30px;
+        line-height: 30px;
+        padding: 0 0 0 38px; } }
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1230px; }
+
+  .banner-wrapper {
+    height: 525px; }
+    .banner-wrapper .banner-left #banner-left-info {
+      width: 85%;
+      font-size: 1.969rem;
+      padding: 4.828rem 0rem 2.297rem 0rem; }
+    .banner-wrapper .banner-left .banner-left-card {
+      padding-right: 1.438rem; }
+      .banner-wrapper .banner-left .banner-left-card .card {
+        padding: 0rem 3.188rem;
+        height: 100%;
+        width: 100%; }
+        .banner-wrapper .banner-left .banner-left-card .card .card-header {
+          font-size: 0.984rem;
+          padding: 1.547rem 0rem 2.109rem 0rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .dropdown {
+          padding: 1.219rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .dropdown-margin {
+          margin-bottom: 0.516rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .home-search-input .ui {
+          width: 100%; }
+          .banner-wrapper .banner-left .banner-left-card .card .home-search-input .ui input {
+            border-radius: 5px;
+            padding: 1.219rem;
+            margin-bottom: 0rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .button {
+          padding: 1.266rem 2.313rem 1.266rem 2.313rem;
+          margin-bottom: 1.734rem;
+          margin-top: 1.172rem;
+          font-size: 1rem; }
+      .banner-wrapper .banner-left .banner-left-card .banner-postcode-input {
+        padding-bottom: 0rem; }
+    .banner-wrapper .banner-middle {
+      padding: 41px 0px 41px 0px; }
+      .banner-wrapper .banner-middle img {
+        width: 100%; }
+    .banner-wrapper .banner-right {
+      padding-top: 14%;
+      padding-left: 3.125rem; }
+      .banner-wrapper .banner-right ul li {
+        font-size: 1.547rem;
+        margin-bottom: 2.5rem;
+        background-size: 30px;
+        line-height: 35px;
+        padding: 0 5px 0 48px; } }
+@media screen and (min-width: 1700px) {
+  .container {
+    max-width: 1344px; }
+
+  .banner-wrapper {
+    height: 680px; }
+    .banner-wrapper .banner-left #banner-left-info {
+      width: 85%;
+      font-size: 2.625rem;
+      padding: 6.438rem 0rem 3.063rem 0rem; }
+    .banner-wrapper .banner-left .banner-left-card {
+      padding-right: 2rem; }
+      .banner-wrapper .banner-left .banner-left-card .card {
+        padding: 0rem 3.188rem;
+        width: 100%;
+        height: 100%; }
+        .banner-wrapper .banner-left .banner-left-card .card .card-header {
+          font-size: 1.313rem;
+          padding: 2.063rem 0rem 2.813rem 0rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .dropdown {
+          padding: 1.625rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .home-search-input .ui {
+          width: 100%; }
+          .banner-wrapper .banner-left .banner-left-card .card .home-search-input .ui input {
+            border-radius: 5px;
+            padding: 1.625rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .dropdown-margin {
+          margin-bottom: 0.688rem; }
+        .banner-wrapper .banner-left .banner-left-card .card .button {
+          padding: 1.688rem 2.313rem 1.688rem 2.313rem;
+          margin-bottom: 2.313rem;
+          margin-top: 1.563rem;
+          font-size: 1.688rem; }
+    .banner-wrapper .banner-middle {
+      padding: 51px 0px 51px 0px; }
+      .banner-wrapper .banner-middle img {
+        width: 100%; }
+    .banner-wrapper .banner-right ul li {
+      font-size: 2.063rem;
+      background-size: 34px;
+      padding: 0 5px 0 48px; } }
+/* Services Section */
+.services-wrapper {
+  background-color: #fff;
+  padding-top: 70px; }
+  .services-wrapper .services-container .services-heading {
+    font-family: "Urbanist",sans-serif;
+    font-weight: 700; }
+  .services-wrapper .services-container .row {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap; }
+    .services-wrapper .services-container .row .service-card {
+      width: 14%;
+      background: #fff;
+      border-radius: 10px;
+      transition: 0.3s; }
+      .services-wrapper .services-container .row .service-card .service-card-header {
+        overflow: hidden; }
+      .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-title {
+          font-family: "Urbanist",sans-serif;
+          font-weight: 400;
+          width: 60%; }
+        .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price {
+          width: 40%; }
+        .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-top {
+          font-family: "Urbanist",sans-serif;
+          font-weight: 400;
+          text-align: right;
+          color: #b8b9bb; }
+        .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-bottom {
+          font-family: "Urbanist",sans-serif;
+          font-weight: 600;
+          text-align: right; }
+
+/* Utilities for Services */
+.margin-xs {
+  margin: 0rem; }
+
+.margin-xs {
+  margin: 0rem; }
+
+.margin-sm {
+  margin: 0rem; }
+
+.margin-md {
+  margin: 0rem; }
+
+.margin-lg {
+  margin: 0rem; }
+
+.margin-xl {
+  margin: 0rem; }
+
+.margin-xll {
+  margin: 0rem; }
+
+.primary-highlight {
+  color: #FCBF49; }
+
+/* Services Media Queries */
+@media screen and (min-width: 220px) {
+  .services-wrapper .services-container .services-heading {
+    text-align: center;
+    padding: 2rem 0rem 1.5rem 0rem; }
+  .services-wrapper .services-container .row {
+    justify-content: center;
+    padding-bottom: 3.438rem; }
+    .services-wrapper .services-container .row .margin-sm {
+      margin-right: 0.731rem; }
+    .services-wrapper .services-container .row .service-card {
+      width: 43%;
+      margin-bottom: 0.688rem; }
+      .services-wrapper .services-container .row .service-card .service-card-header {
+        min-height: 68.85px;
+        max-height: 68.85px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; }
+      .services-wrapper .services-container .row .service-card .service-card-footer {
+        padding: 0.875rem 0.688rem; }
+        .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content {
+          position: relative; }
+          .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-title {
+            font-size: 0.45rem; }
+          .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-top {
+            font-size: 0.45rem;
+            right: 0; }
+          .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-bottom {
+            font-size: 0.45rem; } }
+@media screen and (min-width: 320px) {
+  .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-title {
+    font-size: 0.65rem; }
+  .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-top {
+    font-size: 0.55rem; }
+  .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-bottom {
+    font-size: 0.65rem; } }
+@media screen and (min-width: 375px) {
+  .services-wrapper .services-container .services-heading {
+    font-size: 1.5rem; }
+  .services-wrapper .services-container .row .margin-sm {
+    margin-right: 0.625rem; }
+  .services-wrapper .services-container .row .service-card {
+    width: 44%; }
+    .services-wrapper .services-container .row .service-card .service-card-header {
+      min-height: 81px;
+      max-height: 81px; }
+    .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-title {
+      font-size: 0.75rem; }
+    .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-top {
+      font-size: 0.65rem; }
+    .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-bottom {
+      font-size: 0.75rem; } }
+@media screen and (min-width: 425px) {
+  .services-wrapper .services-container .row {
+    padding-bottom: 3.438rem; }
+    .services-wrapper .services-container .row .margin-sm {
+      margin-right: 0.706rem; }
+    .services-wrapper .services-container .row .service-card {
+      margin-bottom: 0.813rem; }
+      .services-wrapper .services-container .row .service-card .service-card-header {
+        min-height: 91.53px;
+        max-height: 91.53px; }
+      .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-title {
+        font-size: 0.9rem; }
+      .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-top {
+        font-size: 0.8rem; }
+      .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-bottom {
+        font-size: 0.9rem; } }
+@media screen and (min-width: 768px) {
+  .services-wrapper .services-container .services-heading {
+    font-size: 1rem;
+    padding: 1.575rem 0rem 1rem 0rem; }
+  .services-wrapper .services-container .row {
+    justify-content: flex-start; }
+    .services-wrapper .services-container .row .margin-sm {
+      margin-right: 0; }
+    .services-wrapper .services-container .row .margin-md {
+      margin-right: 0.675rem; }
+    .services-wrapper .services-container .row .service-card {
+      width: 32%; }
+      .services-wrapper .services-container .row .service-card .service-card-header {
+        min-height: 7.688rem;
+        max-height: 7.688rem; }
+      .services-wrapper .services-container .row .service-card .service-card-footer {
+        padding: 1.688rem 0.75rem 1.125rem 0.75rem; }
+        .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content {
+          position: relative; }
+          .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-title {
+            font-size: 0.9rem; }
+          .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-top {
+            font-size: 0.8rem;
+            top: -80%; }
+          .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-bottom {
+            font-size: 1.2rem; } }
+@media screen and (min-width: 1024px) {
+  .services-wrapper .services-container .services-heading {
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 2.087rem 0rem 1.325rem 0rem; }
+  .services-wrapper .services-container .row .margin-lg {
+    margin-right: 0.894rem; }
+  .services-wrapper .services-container .row .service-card .service-card-header {
+    min-height: 8.391rem;
+    max-height: 8.391rem; }
+  .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-title {
+    font-size: 1.2rem; }
+  .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-top {
+    font-size: 1rem; } }
+@media screen and (min-width: 1440px) {
+  .services-wrapper .services-container .services-heading {
+    font-size: 1.547rem;
+    padding: 2.953rem 0rem 1.875rem 0rem; }
+  .services-wrapper .services-container .row {
+    padding-bottom: 6.563rem; }
+    .services-wrapper .services-container .row .margin-xll {
+      margin-right: 1.388rem; }
+    .services-wrapper .services-container .row .service-card {
+      width: 188px;
+      min-height: 135px !important; }
+      .services-wrapper .services-container .row .service-card .service-card-header {
+        min-height: 123px;
+        max-height: 123px; }
+      .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-title {
+        font-size: 0.9rem; }
+      .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-top {
+        font-size: 0.8rem; }
+      .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-bottom {
+        font-size: 0.9rem; } }
+@media screen and (min-width: 1700px) {
+  .services-wrapper .services-container .services-heading {
+    font-size: 2.063rem;
+    padding: 3.938rem 0rem 2.5rem 0rem; }
+  .services-wrapper .services-container .row .service-card {
+    width: 251px;
+    min-height: 181px !important; }
+    .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-title {
+      font-size: 1.2rem; }
+    .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-top {
+      font-size: 1rem; }
+    .services-wrapper .services-container .row .service-card .service-card-footer .service-card-footer-content #cf-price-bottom {
+      font-size: 1.2rem; } }
+/* Work Section */
+.work-wrapper .work-container .row-flex {
+  text-align: center; }
+  .work-wrapper .work-container .row-flex .work-card .work-card-header {
+    font-family: "Urbanist",sans-serif;
+    font-weight: bold; }
+  .work-wrapper .work-container .row-flex .work-card .work-card-info {
+    font-family: "Urbanist",sans-serif;
+    font-weight: 400; }
+.work-wrapper .work-container .work-title {
+  margin: 0 auto;
+  text-align: center; }
+  .work-wrapper .work-container .work-title h1 {
+    font-family: "Urbanist",sans-serif;
+    font-weight: 500; }
+
+/* Work Media Queries */
+@media screen and (min-width: 220px) {
+  .work-wrapper .work-container .row-flex {
+    padding: 3.719rem 0rem 4.569rem 0rem; }
+    .work-wrapper .work-container .row-flex .work-card {
+      width: 48%;
+      padding: 1.5rem; }
+      .work-wrapper .work-container .row-flex .work-card .work-icon-circle {
+        border-radius: 50%;
+        height: 62px;
+        width: 62px;
+        display: inline-block;
+        background: #ddd7f8;
+        padding: 12%;
+        margin-bottom: 1.4rem; }
+      .work-wrapper .work-container .row-flex .work-card .work-card-header {
+        font-size: 0.844rem;
+        padding: 0.875rem 0rem 0.6rem 0rem; }
+      .work-wrapper .work-container .row-flex .work-card .work-card-info {
+        font-size: 0.844rem; }
+  .work-wrapper .work-container .work-title {
+    max-width: 100%;
+    padding-top: 3.75rem;
+    padding-bottom: 4rem;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .work-wrapper .work-container .work-title h1 {
+      font-size: 1.031rem; } }
+@media screen and (min-width: 375px) {
+  .work-wrapper .work-container .row-flex {
+    padding: 4.375rem 0rem 5.375rem 0rem; }
+    .work-wrapper .work-container .row-flex .work-card .work-icon-circle {
+      padding: 10%; }
+  .work-wrapper .work-container .work-title {
+    max-width: 100%; } }
+@media screen and (min-width: 425px) {
+  .work-wrapper .work-container .row-flex {
+    padding: 4.944rem 0rem 6.074rem 0rem; }
+    .work-wrapper .work-container .row-flex .work-card .work-card-header {
+      font-size: 0.953rem;
+      padding: 0.989rem 0rem 0.7rem 0rem; }
+    .work-wrapper .work-container .row-flex .work-card .work-card-info {
+      font-size: 0.953rem; }
+    .work-wrapper .work-container .row-flex .work-card .work-icon-circle {
+      padding: 8%; }
+  .work-wrapper .work-container .work-title h1 {
+    font-size: 1.165rem; } }
+@media screen and (min-width: 540px) {
+  .work-wrapper .work-container .row-flex {
+    padding: 4.944rem 0rem 6.074rem 0rem; }
+    .work-wrapper .work-container .row-flex .work-card .work-icon-circle {
+      padding: 6%; } }
+@media screen and (min-width: 768px) {
+  .work-wrapper .work-container .row-flex {
+    padding: 2.325rem 0rem 4.525rem 0rem; }
+    .work-wrapper .work-container .row-flex .work-card {
+      width: 33.3%; }
+      .work-wrapper .work-container .row-flex .work-card .work-card-header {
+        font-size: 1rem;
+        padding: 0.975rem 0rem 0.55rem 0rem; }
+      .work-wrapper .work-container .row-flex .work-card .work-card-info {
+        font-size: 1rem; }
+      .work-wrapper .work-container .row-flex .work-card .work-icon-circle {
+        padding: 8%; }
+  .work-wrapper .work-container .work-title h1 {
+    font-size: 1.408rem; } }
+@media screen and (min-width: 1024px) {
+  .work-wrapper .work-container .row-flex {
+    padding: 5.25rem 0rem 6rem 0rem; }
+    .work-wrapper .work-container .row-flex .work-card .work-card-header {
+      font-size: 1.2rem;
+      padding: 1.292rem 0rem 0.729rem 0rem; }
+    .work-wrapper .work-container .row-flex .work-card .work-card-info {
+      font-size: 1.2rem; }
+    .work-wrapper .work-container .row-flex .work-card .work-icon-circle {
+      padding: 5%; }
+  .work-wrapper .work-container .work-title {
+    width: 68.2%;
+    padding-top: 6.125rem;
+    padding-bottom: 4.375rem; }
+    .work-wrapper .work-container .work-title h1 {
+      font-size: 1.4rem; } }
+@media screen and (min-width: 1440px) {
+  .work-wrapper .work-container .row-flex .work-card {
+    width: 16.5%; }
+    .work-wrapper .work-container .row-flex .work-card .work-card-header {
+      font-size: 1.4rem;
+      padding: 1.828rem 0rem 1.031rem 0rem; }
+    .work-wrapper .work-container .row-flex .work-card .work-card-info {
+      font-size: 1.125rem;
+      line-height: 2.5rem; }
+    .work-wrapper .work-container .row-flex .work-card .work-icon-circle {
+      padding: 8.5%; }
+  .work-wrapper .work-container .work-title h1 {
+    font-size: 1.8rem; } }
+@media screen and (min-width: 1700px) {
+  .work-wrapper .work-container .row-flex .work-card .work-card-header {
+    font-size: 1.5rem;
+    padding: 2.438rem 0rem 1.375rem 0rem; }
+  .work-wrapper .work-container .row-flex .work-card .work-card-info {
+    font-size: 1.125rem; }
+  .work-wrapper .work-container .row-flex .work-card .work-icon-circle {
+    padding: 6.5%; }
+  .work-wrapper .work-container .work-title h1 {
+    font-size: 2.063rem; } }
+/* How Section */
+.how-wrapper .how-container {
+  /* One */
+  /* Two */
+  /* Third */
+  /* Four */ }
+  .how-wrapper .how-container .work-header {
+    margin: 0 auto;
+    text-align: center; }
+    .how-wrapper .how-container .work-header h1 {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 700; }
+  .how-wrapper .how-container .work-how-card-container-one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .how-wrapper .how-container .work-how-card-container-one .left-item-one-image .left-item-one-img {
+      background: #eeecfa; }
+      .how-wrapper .how-container .work-how-card-container-one .left-item-one-image .left-item-one-img .cover {
+        object-fit: contain; }
+      .how-wrapper .how-container .work-how-card-container-one .left-item-one-image .left-item-one-img button {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 700;
+        background-color: #FCBF49;
+        border: none;
+        border-radius: 20px;
+        color: white; }
+    .how-wrapper .how-container .work-how-card-container-one .left-item-one-info h6 {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 700; }
+    .how-wrapper .how-container .work-how-card-container-one .left-item-one-info p {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 500;
+      margin: 0%;
+      padding: 0%; }
+    .how-wrapper .how-container .work-how-card-container-one .left-item-one-label button {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 700;
+      background-color: #FCBF49;
+      border: none;
+      border-radius: 20px;
+      color: white; }
+  .how-wrapper .how-container .work-how-card-container-two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .how-wrapper .how-container .work-how-card-container-two .left-item-two-image .left-item-two-img {
+      background: #eeecfa; }
+      .how-wrapper .how-container .work-how-card-container-two .left-item-two-image .left-item-two-img .cover {
+        object-fit: contain; }
+      .how-wrapper .how-container .work-how-card-container-two .left-item-two-image .left-item-two-img button {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 700;
+        background-color: #FCBF49;
+        border: none;
+        border-radius: 20px;
+        color: white; }
+    .how-wrapper .how-container .work-how-card-container-two .left-item-two-info h6 {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 700; }
+    .how-wrapper .how-container .work-how-card-container-two .left-item-two-info p {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 500;
+      margin: 0%;
+      padding: 0%; }
+  .how-wrapper .how-container .work-how-card-container-three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .how-wrapper .how-container .work-how-card-container-three .left-item-three-image .left-item-three-img {
+      background: #eeecfa; }
+      .how-wrapper .how-container .work-how-card-container-three .left-item-three-image .left-item-three-img .cover {
+        object-fit: contain; }
+      .how-wrapper .how-container .work-how-card-container-three .left-item-three-image .left-item-three-img button {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 700;
+        background-color: #FCBF49;
+        border: none;
+        border-radius: 20px;
+        color: white; }
+    .how-wrapper .how-container .work-how-card-container-three .left-item-three-info h6 {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 700; }
+    .how-wrapper .how-container .work-how-card-container-three .left-item-three-info p {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 500;
+      margin: 0%;
+      padding: 0%; }
+  .how-wrapper .how-container .work-how-card-container-four {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .how-wrapper .how-container .work-how-card-container-four .left-item-four-image .left-item-four-img {
+      background: #eeecfa;
+      position: relative; }
+      .how-wrapper .how-container .work-how-card-container-four .left-item-four-image .left-item-four-img .cover {
+        object-fit: contain; }
+      .how-wrapper .how-container .work-how-card-container-four .left-item-four-image .left-item-four-img button {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 700;
+        background-color: #FCBF49;
+        border: none;
+        border-radius: 20px;
+        color: white; }
+    .how-wrapper .how-container .work-how-card-container-four .left-item-four-info h6 {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 700; }
+    .how-wrapper .how-container .work-how-card-container-four .left-item-four-info p {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 500;
+      margin: 0%;
+      padding: 0%; }
+
+/* Work Media Queries */
+@media screen and (min-width: 220px) {
+  .how-wrapper .how-container .work-header h1 {
+    font-size: 1.116rem;
+    padding: 2.019rem 1.7rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-one {
+    padding-bottom: 4.625rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image {
+      width: 100%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img {
+        margin: 0rem 3.625rem;
+        min-height: 16.125rem;
+        position: relative; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img .cover {
+          object-fit: contain; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img .left-cover {
+          width: 100%;
+          padding: 0.75rem 0rem 0.875rem 0.25rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img button {
+          padding: 0.625rem 1.625rem;
+          font-size: 1.031rem;
+          left: 50%;
+          top: 0%;
+          transform: translate(-50%, -50%);
+          position: absolute; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info {
+      width: 70%;
+      text-align: center;
+      padding-top: 1.938rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info h6 {
+        font-size: 0.938rem;
+        display: inline; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info p {
+        font-size: 1.031rem;
+        display: inline; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-two {
+    padding-bottom: 4.625rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image {
+      width: 100%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img {
+        position: relative;
+        margin: 0rem 3.625rem;
+        min-height: 16.125rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img .left-cover {
+          width: 100%;
+          padding-top: 1.5rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img button {
+          position: absolute;
+          padding: 0.625rem 1.625rem;
+          font-size: 1.031rem;
+          left: 50%;
+          top: 0%;
+          transform: translate(-50%, -50%); }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info {
+      width: 65%;
+      text-align: center;
+      padding-top: 1.938rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info h6 {
+        font-size: 0.938rem;
+        display: inline; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info p {
+        font-size: 1.031rem;
+        display: inline; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-three {
+    padding-bottom: 4.625rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image {
+      width: 100%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img {
+        margin: 0rem 3.625rem;
+        min-height: 16.125rem;
+        position: relative; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img .left-cover {
+          width: 75%;
+          padding: 3.75rem 0rem 0.875rem 1.25rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img button {
+          position: absolute;
+          padding: 0.625rem 1.625rem;
+          font-size: 1.031rem;
+          left: 50%;
+          top: 0%;
+          transform: translate(-50%, -50%); }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info {
+      width: 65%;
+      text-align: center;
+      padding-top: 1.938rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info h6 {
+        font-size: 0.938rem;
+        display: inline; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info p {
+        font-size: 1.031rem;
+        display: inline; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-four {
+    padding-bottom: 4.625rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image {
+      width: 100%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img {
+        margin: 0rem 3.625rem;
+        min-height: 16.125rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img .left-cover {
+          width: 75%;
+          padding: 3.75rem 0rem 0.875rem 1.25rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img button {
+          position: absolute;
+          padding: 0.625rem 1.625rem;
+          font-size: 1.031rem;
+          left: 50%;
+          top: 0%;
+          transform: translate(-50%, -50%); }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info {
+      width: 65%;
+      text-align: center;
+      padding-top: 1.938rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info h6 {
+        font-size: 0.938rem;
+        display: inline; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info p {
+        font-size: 1.031rem;
+        display: inline; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info .work-how-service-four-text {
+        display: none; }
+  .how-wrapper .how-container .work-find h6 {
+    font-family: "Urbanist",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FCBF49;
+    text-align: center;
+    padding-bottom: 3.5rem; } }
+@media screen and (min-width: 375px) {
+  .how-wrapper .how-container .work-header h1 {
+    font-size: 1.313rem;
+    padding: 2.375rem 1.875rem; } }
+@media screen and (min-width: 425px) {
+  .how-wrapper .how-container .work-header h1 {
+    font-size: 1.483rem;
+    padding: 2.692rem 2.119rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info h6 {
+    font-size: 1.2rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info p {
+    font-size: 1.165rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info h6 {
+    font-size: 1.2rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info p {
+    font-size: 1.165rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info h6 {
+    font-size: 1.2rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info p {
+    font-size: 1.165rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info h6 {
+    font-size: 1.2rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info p {
+    font-size: 1.165rem; } }
+@media screen and (min-width: 540px) {
+  .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image {
+    width: 90%; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image {
+    width: 90%; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image {
+    width: 90%; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image {
+    width: 90%; } }
+@media screen and (min-width: 768px) {
+  .how-wrapper .how-container .work-header h1 {
+    font-size: 2.688rem;
+    padding: 2.25rem 2.325rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image {
+    width: 40%; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img {
+      min-height: 258px;
+      margin: 0rem 0rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img .left-cover {
+        width: 100%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img button {
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, -50%);
+        padding: 0.625rem 1.625rem;
+        font-size: 1rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info {
+    width: 60%;
+    padding-left: 3.45rem;
+    text-align: left;
+    padding-top: 6.6rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info h6 {
+      font-size: 1.4rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info p {
+      width: 90%;
+      font-size: 1.2rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image {
+    width: 40%;
+    order: 1; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img {
+      min-height: 258px;
+      margin: 0rem 0rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img .left-cover {
+        width: 100%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1.031rem;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, -50%); }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info {
+    width: 60%;
+    order: 0;
+    text-align: left;
+    padding-left: 0rem;
+    padding-top: 6.6rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info h6 {
+      font-size: 1.4rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info p {
+      font-size: 1.2rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image {
+    width: 40%; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img {
+      min-height: 258px;
+      margin: 0rem 0rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img .left-cover {
+        width: 95%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img button {
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, -50%); }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info {
+    width: 60%;
+    padding-left: 3.45rem;
+    text-align: left;
+    padding-top: 6.6rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info h6 {
+      font-size: 1.4rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info p {
+      font-size: 1.2rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image {
+    width: 40%;
+    order: 1; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img {
+      min-height: 258px;
+      margin: 0rem 0rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img .left-cover {
+        width: 95%;
+        padding: 3.25rem 0rem 0.875rem 1.25rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img button {
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, -50%); }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info {
+    width: 60%;
+    order: 0;
+    padding-left: 0rem;
+    text-align: left;
+    padding-top: 6.6rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info h6 {
+      font-size: 1.4rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info p {
+      width: 90%;
+      font-size: 1.2rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info .work-how-service-four-text {
+      display: inline; }
+  .how-wrapper .how-container .work-find {
+    display: none; } }
+@media screen and (min-width: 1024px) {
+  .how-wrapper .how-container .work-how-card .work-header h1 {
+    font-size: 1.391rem;
+    padding: 2.981rem 3.081rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-one {
+    padding: 0rem 9.143rem;
+    margin-bottom: 2rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image {
+      width: 40%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img .left-cover {
+          width: 100%; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info {
+      width: 60%;
+      padding-left: 4.604rem;
+      padding-top: 7.321rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info h6 {
+        font-size: 1.4rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info p {
+        font-size: 1.1rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-label {
+      right: 1.688rem;
+      top: 1.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-label button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-two {
+    padding: 0rem 9.143rem;
+    margin-bottom: 2rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image {
+      width: 40%;
+      order: 1; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img .left-cover {
+          width: 95%;
+          padding: 3.25rem 0rem 0.875rem 1.25rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info {
+      width: 60%;
+      order: 0;
+      padding-left: 0rem;
+      padding-top: 6.095rem;
+      padding-bottom: 6.095rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info h6 {
+        font-size: 1.4rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info p {
+        font-size: 1.1rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-label {
+      right: 1.688rem;
+      top: 1.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-label button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1.031rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-three {
+    margin-bottom: 2rem;
+    padding: 0rem 9.143rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image {
+      width: 40%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img .left-cover {
+          width: 95%;
+          padding: 3.25rem 0rem 0.875rem 1.25rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info {
+      width: 60%;
+      padding-left: 4.604rem;
+      padding-top: 7.321rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info h6 {
+        font-size: 1.4rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info p {
+        font-size: 1.1rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-label {
+      right: 1.688rem;
+      top: 1.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-label button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1.031rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-four {
+    padding: 0rem 9.143rem;
+    margin-bottom: 8rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image {
+      width: 40%;
+      order: 1; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img .left-cover {
+          width: 95%;
+          padding: 3.25rem 0rem 0.875rem 1.25rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info {
+      width: 60%;
+      order: 0;
+      padding-left: 0rem;
+      padding-top: 6.095rem;
+      padding-bottom: 6.095rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info h6 {
+        font-size: 1.4rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info p {
+        font-size: 1.1rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-label {
+      right: 1.688rem;
+      top: 1.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-label button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1.031rem; } }
+@media screen and (min-width: 1440px) {
+  .how-wrapper .how-container .work-how-card .work-header h1 {
+    font-size: 1.969rem;
+    padding: 4.219rem 4.359rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-one {
+    padding: 0rem 12.938rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image {
+      width: 40%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img button {
+          font-size: 1.3rem;
+          left: 50%;
+          top: 0%;
+          transform: translate(-50%, -50%); }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info {
+      width: 60%;
+      padding-left: 6.516rem;
+      padding-top: 9.891rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info h6 {
+        font-size: 1.055rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info p {
+        font-size: 1.195rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-label {
+      right: 1.688rem;
+      top: 1.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-label button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-two {
+    padding: 0rem 12.938rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image {
+      width: 40%;
+      order: 1; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img .left-cover {
+          width: 95%;
+          padding: 3.25rem 0rem 0.875rem 1.25rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img button {
+          font-size: 1.3rem;
+          left: 50%;
+          top: 0%;
+          transform: translate(-50%, -50%); }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info {
+      width: 60%;
+      order: 0;
+      padding-left: 0rem;
+      padding-top: 8.813rem;
+      padding-bottom: 8.813rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info h6 {
+        font-size: 1.055rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info p {
+        font-size: 1.195rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-label {
+      right: 1.688rem;
+      top: 1.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-label button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1.031rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-three {
+    padding: 0rem 12.938rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image {
+      width: 40%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img .left-cover {
+          width: 95%;
+          padding: 3.25rem 0rem 0.875rem 1.25rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img button {
+          font-size: 1.3rem;
+          left: 50%;
+          top: 0%;
+          transform: translate(-50%, -50%); }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info {
+      width: 60%;
+      padding-left: 6.516rem;
+      padding-top: 9.891rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info h6 {
+        font-size: 1.055rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info p {
+        font-size: 1.195rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-four {
+    padding: 0rem 12.938rem;
+    margin-bottom: 13.5rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image {
+      width: 40%;
+      order: 1; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img .left-cover {
+          width: 95%;
+          padding: 3.25rem 0rem 0.875rem 1.25rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img button {
+          font-size: 1.3rem;
+          left: 50%;
+          top: 0%;
+          transform: translate(-50%, -50%); }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info {
+      width: 60%;
+      order: 0;
+      padding-left: 0rem;
+      padding-right: 2rem;
+      padding-top: 8.813rem;
+      padding-bottom: 8.813rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info h6 {
+        font-size: 1.055rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info p {
+        font-size: 1.195rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-label {
+      right: 1.688rem;
+      top: 1.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-label button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1.031rem; } }
+@media screen and (min-width: 1700px) {
+  .how-wrapper .how-container .work-how-card .work-header h1 {
+    font-size: 2.625rem;
+    padding: 5.625rem 5.813rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-one {
+    padding: 0rem 17.25rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image {
+      width: 40%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-image .left-item-one-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info {
+      width: 60%;
+      padding-left: 8.688rem;
+      padding-top: 13.188rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info h6 {
+        font-size: 1.406rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-info p {
+        font-size: 1.594rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-label {
+      right: 1.688rem;
+      top: 1.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-one .left-item-one-label button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-two {
+    padding: 0rem 17.25rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image {
+      width: 40%;
+      order: 1; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-image .left-item-two-img .left-cover {
+          width: 95%;
+          padding: 3.25rem 0rem 0.875rem 1.25rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info {
+      width: 60%;
+      order: 0;
+      padding-left: 0rem;
+      padding-top: 11.75rem;
+      padding-bottom: 11.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info h6 {
+        font-size: 1.406rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-info p {
+        font-size: 1.594rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-label {
+      right: 1.688rem;
+      top: 1.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-two .left-item-two-label button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1.031rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-three {
+    padding: 0rem 17.25rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image {
+      width: 40%; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-image .left-item-three-img .left-cover {
+          width: 95%;
+          padding: 3.25rem 0rem 0.875rem 1.25rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info {
+      width: 60%;
+      padding-left: 8.688rem;
+      padding-top: 13.188rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info h6 {
+        font-size: 1.406rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-three .left-item-three-info p {
+        font-size: 1.594rem; }
+  .how-wrapper .how-container .work-how-card .work-how-card-container-four {
+    padding: 0rem 17.25rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image {
+      width: 40%;
+      order: 1; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img {
+        min-height: 258px;
+        max-width: 414px;
+        margin: 0rem 0rem; }
+        .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-image .left-item-four-img .left-cover {
+          width: 95%;
+          padding: 3.25rem 0rem 0.875rem 1.25rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info {
+      width: 60%;
+      order: 0;
+      padding-left: 0rem;
+      padding-top: 11.75rem;
+      padding-bottom: 11.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info h6 {
+        font-size: 1.406rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-info p {
+        font-size: 1.594rem; }
+    .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-label {
+      right: 1.688rem;
+      top: 1.75rem; }
+      .how-wrapper .how-container .work-how-card .work-how-card-container-four .left-item-four-label button {
+        padding: 0.625rem 1.625rem;
+        font-size: 1.031rem; } }
+/* How Section */
+/* About Section */
+.about-wrapper {
+  background: #FCBF49; }
+  .about-wrapper .about-container .about-title {
+    font-family: "Urbanist",sans-serif;
+    font-weight: 700;
+    color: white; }
+  .about-wrapper .about-container .about-info {
+    font-family: "Urbanist",sans-serif;
+    font-weight: 500;
+    color: white;
+    margin: 0px; }
+  .about-wrapper .about-container .about-button {
+    font-family: "Urbanist",sans-serif;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white; }
+    .about-wrapper .about-container .about-button:hover {
+      cursor: pointer; }
+  .about-wrapper .about-container .about-one {
+    display: flex; }
+
+@media screen and (min-width: 320px) {
+  .about-container .about-one {
+    flex-direction: column;
+    text-align: center; }
+    .about-container .about-one .about-info {
+      padding: 0rem 1.25rem 0rem 1.25rem; }
+    .about-container .about-one .about-button {
+      font-size: 0.75rem; }
+    .about-container .about-one .about-one-img img {
+      width: 100%;
+      padding-top: 2.875rem;
+      z-index: 10; }
+  .about-container .about-content .about-title {
+    padding: 4.75rem 0rem 2.5rem 0rem;
+    font-size: 1.313rem; }
+  .about-container .about-content .about-info {
+    font-size: 0.75rem;
+    padding-bottom: 3.25rem; }
+  .about-container .about-content .about-button {
+    min-width: 270px;
+    padding: 15px; } }
+@media screen and (min-width: 540px) {
+  .about-container .about-one .about-content .about-info {
+    font-size: 1rem; }
+  .about-container .about-one .about-content .about-button {
+    font-size: 1rem; } }
+@media screen and (min-width: 768px) {
+  .about-wrapper {
+    height: 840px; }
+    .about-wrapper .about-container .about-one {
+      flex-direction: row;
+      text-align: left;
+      position: relative; }
+      .about-wrapper .about-container .about-one .about-content {
+        width: 50%; }
+        .about-wrapper .about-container .about-one .about-content .about-title {
+          padding: 2.75rem 0rem 1.5rem 0rem; }
+        .about-wrapper .about-container .about-one .about-content .about-info {
+          padding: 0;
+          width: 100%;
+          padding: 0rem 0rem 1.5rem 0rem; }
+        .about-wrapper .about-container .about-one .about-content .about-button {
+          display: block; }
+      .about-wrapper .about-container .about-one .about-one-img img {
+        width: 50%;
+        position: absolute;
+        right: -5%;
+        top: -40%; } }
+@media screen and (min-width: 1024px) {
+  .about-wrapper {
+    height: 1028px;
+    margin-top: 4.174rem; }
+    .about-wrapper .about-container .about-one .about-content {
+      width: 50%; }
+      .about-wrapper .about-container .about-one .about-content .about-title {
+        font-size: 1.594rem;
+        padding: 4.594rem 0rem 1.5rem 0rem; }
+      .about-wrapper .about-container .about-one .about-content .about-info {
+        font-size: 1.055rem;
+        padding-bottom: 1.969rem; }
+      .about-wrapper .about-container .about-one .about-content .about-button {
+        font-size: 1.2rem;
+        padding: 1.438rem 0rem 1.438rem 0rem;
+        min-width: 332px; }
+    .about-wrapper .about-container .about-one .about-one-img {
+      width: 50%; }
+      .about-wrapper .about-container .about-one .about-one-img img {
+        width: 42%;
+        right: 8%; } }
+@media screen and (min-width: 1440px) {
+  .about-wrapper {
+    height: 1356px;
+    margin-top: 5.906rem; }
+    .about-wrapper .about-container .about-one .about-content .about-title {
+      font-size: 2.109rem;
+      padding: 5.297rem 0rem 1.406rem 0rem; }
+    .about-wrapper .about-container .about-one .about-content .about-info {
+      width: 71%;
+      font-size: 1.172rem;
+      padding-bottom: 2.906rem; }
+    .about-wrapper .about-container .about-one .about-content .about-button {
+      padding: 1.438rem 0rem 1.438rem 0rem;
+      font-size: 0.938rem;
+      min-width: 324px; }
+    .about-wrapper .about-container .about-one .about-one-img img {
+      width: 38%;
+      right: 10%;
+      top: -48%; } }
+@media screen and (min-width: 1700px) {
+  .about-wrapper {
+    height: 1834px;
+    margin-top: 7.875rem; }
+    .about-wrapper .about-container .about-one .about-content .about-title {
+      font-size: 2.813rem;
+      padding: 7.063rem 0rem 1.875rem 0rem; }
+    .about-wrapper .about-container .about-one .about-content .about-info {
+      font-size: 1.563rem;
+      padding-bottom: 3.875rem; }
+    .about-wrapper .about-container .about-one .about-content .about-button {
+      padding: 1.438rem 0rem 1.438rem 0rem;
+      font-size: 1.25rem;
+      min-width: 432px; }
+    .about-wrapper .about-container .about-one .about-one-img img {
+      width: 35%;
+      right: 13%;
+      top: -45%; } }
+/* Testimonial Section */
+.testimonial-wrapper {
+  background: #FCBF49; }
+  .testimonial-wrapper .testimonial-container .testimonial-content h1 {
+    font-family: "Urbanist",sans-serif;
+    font-weight: 700;
+    color: #fff; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one {
+      background: white;
+      border-radius: 5px; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one h6 {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 700; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .comment {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 500; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .author {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 500; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating span {
+          font-family: "Urbanist",sans-serif;
+          font-weight: 500;
+          color: #b1b3b5; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two {
+      background: white;
+      border-radius: 5px; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two h6 {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 700; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .comment {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 500; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .author {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 500; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating span {
+          font-family: "Urbanist",sans-serif;
+          font-weight: 500;
+          color: #b1b3b5; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three {
+      background: white;
+      border-radius: 5px; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three h6 {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 700; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .comment {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 500; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .author {
+        font-family: "Urbanist",sans-serif;
+        font-weight: 500; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .card-three-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .card-three-rating span {
+          font-family: "Urbanist",sans-serif;
+          font-weight: 500;
+          color: #b1b3b5; }
+  .testimonial-wrapper .testimonial-container .testimonial-content h3 {
+    font-family: "Urbanist",sans-serif;
+    font-weight: 500; }
+    .testimonial-wrapper .testimonial-container .testimonial-content h3 .bold {
+      font-weight: 700; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating {
+    display: flex;
+    flex-direction: row;
+    color: #fff; }
+  .testimonial-wrapper .testimonial-container .banner-left-card .banner-left-text {
+    position: relative; }
+    .testimonial-wrapper .testimonial-container .banner-left-card .banner-left-text h6 {
+      font-family: "Urbanist",sans-serif;
+      color: #fff;
+      font-weight: bold; }
+  .testimonial-wrapper .testimonial-container .banner-left-card .card {
+    border-radius: 5px; }
+    .testimonial-wrapper .testimonial-container .banner-left-card .card .content {
+      padding: 0px; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .content .card-header {
+        font-family: "Urbanist",sans-serif;
+        text-align: center; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .content .button {
+        width: 100%;
+        background: #FCBF49;
+        border: none;
+        border-radius: 5px;
+        font-family: "Urbanist",sans-serif;
+        font-weight: 600;
+        color: white; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .content .button:hover {
+          cursor: pointer; }
+
+@media screen and (min-width: 320px) {
+  .testimonial-wrapper .testimonial-container {
+    position: relative; }
+    .testimonial-wrapper .testimonial-container .testimonial-content h1 {
+      padding-top: 1.813rem;
+      padding-bottom: 1.375rem;
+      text-align: center;
+      font-size: 1rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one {
+      width: 136px;
+      margin-right: 0.938rem;
+      padding: 0.875rem 1.063rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one h6 {
+        font-size: 0.5rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .comment {
+        font-size: 0.5rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .author {
+        font-size: 0.5rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 0.538rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating img {
+          width: 60%; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating span {
+          font-size: 8px; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two {
+      width: 136px;
+      padding: 0.875rem 1.063rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two h6 {
+        font-size: 0.5rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .comment {
+        font-size: 0.5rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .author {
+        font-size: 0.5rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 0.538rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating img {
+          width: 60%; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating span {
+          font-size: 8px; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three {
+      display: none; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating {
+      justify-content: center; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating .testimonial-star {
+        display: none; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating .testimonial-trust {
+        display: none; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating h3 {
+        text-align: center;
+        padding-top: 1.625rem;
+        padding-bottom: 2.25rem;
+        font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-text h1 {
+      display: none; }
+    .testimonial-wrapper .testimonial-container .banner-left-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .banner-left-text h6 {
+        font-size: 1rem;
+        padding-top: 2.125rem;
+        padding-bottom: 13.5rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card {
+        width: 90%;
+        padding: 0rem 1.7rem;
+        position: absolute;
+        bottom: -12%; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .card-header {
+          font-size: 1.116rem;
+          padding: 1.222rem 0rem 1.063rem 0rem; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .dropdown {
+          padding: 0.903rem;
+          margin-bottom: 0.42rem; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .button {
+          font-size: 0.8rem;
+          padding: 0.903rem 2.875rem 0.903rem 2.875rem;
+          margin-bottom: 1.438rem; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .home-search-input .ui input {
+          margin-bottom: 0.65rem; } }
+@media screen and (min-width: 375px) {
+  .testimonial-wrapper {
+    position: relative; }
+    .testimonial-wrapper .testimonial-container .testimonial-image img {
+      width: 375px;
+      height: 375px;
+      top: -28%; }
+    .testimonial-wrapper .testimonial-container .testimonial-content h1 {
+      text-align: center;
+      font-size: 1.313rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one {
+      width: 162px;
+      height: 116px;
+      margin-right: 0.938rem;
+      padding: 0.875rem 1.063rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two {
+      width: 162px;
+      height: 116px;
+      padding: 0.875rem 1.063rem; }
+    .testimonial-wrapper .testimonial-container h3 {
+      text-align: center;
+      padding-top: 1.625rem;
+      padding-bottom: 2.25rem;
+      font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-text h1 {
+      display: none; }
+    .testimonial-wrapper .testimonial-container .banner-left-card .card {
+      padding: 0rem 2rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .card-header {
+        font-size: 1.313rem;
+        padding: 1.438rem 0rem 1.25rem 0rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .dropdown {
+        padding: 1.063rem;
+        margin-bottom: 0.5rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .button {
+        font-size: 1rem;
+        padding: 1.063rem 2.875rem 1.063rem 2.875rem;
+        margin-bottom: 1.438rem; } }
+@media screen and (min-width: 425px) {
+  .testimonial-wrapper {
+    position: relative; }
+    .testimonial-wrapper .testimonial-container .testimonial-image img {
+      width: 425px;
+      height: 425px;
+      top: -30%; }
+    .testimonial-wrapper .testimonial-container .testimonial-content h1 {
+      padding-bottom: 1.875rem;
+      text-align: center;
+      font-size: 1.313rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one {
+      width: 182px;
+      height: 132px;
+      margin-right: 0.938rem;
+      padding: 0.875rem 1.063rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one h1 {
+        font-size: 1.2rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .comment {
+        font-size: 0.7rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .author {
+        font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two {
+      width: 182px;
+      height: 132px;
+      padding: 0.875rem 1.063rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two h1 {
+        font-size: 1rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .comment {
+        font-size: 0.7rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .author {
+        font-size: 0.8rem; } }
+@media screen and (min-width: 540px) {
+  .testimonial-wrapper {
+    position: relative; }
+    .testimonial-wrapper .testimonial-container .testimonial-image img {
+      width: 540px;
+      height: 540px;
+      top: -25%; }
+    .testimonial-wrapper .testimonial-container .testimonial-content h1 {
+      padding-bottom: 1.875rem;
+      text-align: center;
+      font-size: 1.313rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one {
+      width: 162px;
+      height: 100%;
+      margin-right: 0.938rem;
+      padding: 0.875rem 1.063rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one h1 {
+        font-size: 1.2rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .comment {
+        font-size: 0.7rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .author {
+        font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two {
+      width: 162px;
+      height: 100%;
+      padding: 0.875rem 1.063rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two h1 {
+        font-size: 1rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .comment {
+        font-size: 0.7rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .author {
+        font-size: 0.8rem; } }
+@media screen and (min-width: 768px) {
+  .testimonial-wrapper {
+    position: relative; }
+    .testimonial-wrapper .testimonial-container .testimonial-image {
+      display: block; }
+      .testimonial-wrapper .testimonial-container .testimonial-image img {
+        width: 300px;
+        height: 300px;
+        top: -20%; }
+    .testimonial-wrapper .testimonial-container .testimonial-content h1 {
+      text-align: left;
+      padding-top: 4rem;
+      padding-bottom: 1.875rem;
+      font-size: 1.131rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards {
+      justify-content: flex-start; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one {
+        width: 203px;
+        height: 100%;
+        margin-right: 1.325rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one h6 {
+          font-size: 0.8rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .comment {
+          font-size: 0.8rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .author {
+          font-size: 0.9rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          padding-bottom: 2.125rem; }
+          .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating img {
+            width: 60%; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two {
+        width: 203px;
+        height: 100%;
+        margin-right: 1.325rem;
+        padding: 0.875rem 1.063rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two h6 {
+          font-size: 0.8rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .comment {
+          font-size: 0.8rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .author {
+          font-size: 0.9rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          padding-bottom: 2.125rem; }
+          .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating img {
+            width: 60%; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three {
+        width: 203px;
+        padding: 0.875rem 1.063rem;
+        display: block; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three h6 {
+          font-size: 0.8rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .comment {
+          font-size: 0.8rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .author {
+          font-size: 0.9rem; }
+        .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .card-three-rating {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          padding-bottom: 2.125rem; }
+          .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .card-three-rating img {
+            width: 60%; }
+          .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .card-three-rating span {
+            font-size: 8px; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating {
+      justify-content: flex-start;
+      align-items: flex-end;
+      padding-top: 1.25rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating .testimonial-star {
+        display: inline;
+        width: 20%;
+        padding-right: 1rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating .testimonial-trust {
+        display: inline;
+        width: 20%;
+        padding-right: 1rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating h3 {
+        text-align: left;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-form {
+      padding-top: 3.65rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-form .testimonial-form-img {
+        width: 50%;
+        position: absolute; }
+    .testimonial-wrapper .testimonial-container .banner-left-card {
+      display: block;
+      padding-top: 5rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .banner-left-text h6 {
+        position: absolute;
+        right: 0;
+        bottom: -30%;
+        left: 58%;
+        margin-bottom: 5%;
+        font-size: 18px;
+        width: 30%;
+        padding-bottom: 0rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card {
+        padding-top: 1.125rem;
+        width: 215px;
+        height: 158px;
+        position: absolute;
+        right: 9.5%;
+        top: 92%;
+        padding: 0rem 1.275rem; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .card-header {
+          font-size: 0.6rem;
+          padding: 0.825rem 0rem 1.125rem 0rem; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .dropdown {
+          padding: 0.675rem;
+          margin-bottom: 0.275rem; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .button {
+          padding: 0.675rem 2.313rem 0.675rem 2.313rem;
+          margin-bottom: 0.925rem;
+          font-size: 0.5rem; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .home-search-input .ui input {
+          margin-bottom: 0.65rem;
+          border-radius: 5px;
+          max-height: 61px; } }
+@media screen and (min-width: 1024px) {
+  .testimonial-wrapper .testimonial-container .testimonial-image img {
+    width: 400px;
+    height: 400px;
+    top: -20%; }
+  .testimonial-wrapper .testimonial-container .testimonial-content h1 {
+    padding-top: 6.724rem;
+    padding-bottom: 1.65rem;
+    font-size: 1.5rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one {
+    width: 268px;
+    margin-right: 1.75rem;
+    padding: 1.625rem 1.375rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one h6 {
+      font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .comment {
+      font-size: 0.8rem;
+      padding-bottom: 1.689rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .author {
+      font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating span {
+      font-size: 1.375rem;
+      line-height: 1.688rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two {
+    width: 268px;
+    margin-right: 1.75rem;
+    padding: 1.625rem 1.375rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two h6 {
+      font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .comment {
+      font-size: 0.8rem;
+      padding-bottom: 1.689rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .author {
+      font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating span {
+      font-size: 1.375rem;
+      line-height: 1.688rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three {
+    width: 268px;
+    padding: 1.625rem 1.375rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three h6 {
+      font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .comment {
+      font-size: 0.8rem;
+      padding-bottom: 1.689rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .author {
+      font-size: 0.8rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .card-three-rating span {
+      font-size: 1.375rem;
+      line-height: 1.688rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating {
+    padding-top: 1.656rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating .testimonial-star {
+      padding-right: 1.325rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating .testimonial-trust {
+      padding-right: 1.325rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating h3 {
+      font-size: 1.25rem; }
+  .testimonial-wrapper .testimonial-container .banner-left-card {
+    padding-right: 1.06rem; }
+    .testimonial-wrapper .testimonial-container .banner-left-card .card {
+      padding: 0rem 1.689rem;
+      width: 284px;
+      height: 200px;
+      right: 10%;
+      bottom: 0%; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .card-header {
+        font-size: 0.696rem;
+        padding: 1.547rem 0rem 1.491rem 0rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .dropdown {
+        padding: 0.861rem;
+        margin-bottom: 0.364rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .button {
+        padding: 1.266rem 2.313rem 1.266rem 2.313rem;
+        margin-bottom: 1.226rem;
+        font-size: 0.7rem; } }
+@media screen and (min-width: 1440px) {
+  .testimonial-wrapper .testimonial-container .testimonial-image img {
+    width: 450px;
+    height: 450px;
+    top: -15%; }
+  .testimonial-wrapper .testimonial-container .testimonial-content h1 {
+    padding-top: 9.516rem;
+    padding-bottom: 3.094rem;
+    font-size: 1.875rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards {
+    justify-content: flex-start; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one {
+      width: 381px;
+      height: 256px; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one h6 {
+        font-size: 0.938rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .comment {
+        font-size: 0.938rem;
+        padding-bottom: 2.438rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .author {
+        font-size: 1.031rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating {
+        padding-bottom: 4.125rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two {
+      width: 381px;
+      height: 256px; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two h6 {
+        font-size: 0.938rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .comment {
+        font-size: 0.938rem;
+        padding-bottom: 2.438rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .author {
+        font-size: 1.031rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating {
+        padding-bottom: 4.125rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three {
+      width: 381px;
+      height: 256px; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three h6 {
+        font-size: 0.938rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .comment {
+        font-size: 0.938rem;
+        padding-bottom: 2.438rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .author {
+        font-size: 1.031rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .card-three-rating {
+        padding-bottom: 4.125rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating {
+    padding-top: 2.344rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating .testimonial-star {
+      width: 15%;
+      padding-right: 1.875rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating .testimonial-trust {
+      width: 15%;
+      padding-right: 1.875rem; }
+  .testimonial-wrapper .testimonial-container .banner-left-card {
+    padding-right: 1.438rem; }
+    .testimonial-wrapper .testimonial-container .banner-left-card .banner-left-text h6 {
+      font-size: 2.109rem;
+      line-height: 3.094rem;
+      width: 28%;
+      margin-bottom: -1%; }
+    .testimonial-wrapper .testimonial-container .banner-left-card .card {
+      padding: 0rem 3.188rem;
+      width: 402px;
+      height: 279px;
+      top: 104%; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .card-header {
+        font-size: 0.984rem;
+        padding: 1.547rem 0rem 2.109rem 0rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .dropdown {
+        padding: 1.219rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .dropdown-margin {
+        margin-bottom: 0.516rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .button {
+        padding: 1.266rem 2.313rem 1.266rem 2.313rem;
+        margin-bottom: 1.734rem;
+        margin-top: 1.172rem;
+        font-size: 1rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .home-search-input .ui {
+        width: 100%; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .home-search-input .ui input {
+          border-radius: 5px;
+          padding: 1.219rem;
+          margin-bottom: 0rem; } }
+@media screen and (min-width: 1700px) {
+  .testimonial-wrapper .testimonial-container .testimonial-image img {
+    width: 600px;
+    height: 600px;
+    top: -18%; }
+  .testimonial-wrapper .testimonial-container .testimonial-content h1 {
+    padding-top: 12.688rem;
+    padding-bottom: 4.125rem;
+    font-size: 2.5rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one {
+    width: 508px;
+    height: 345px;
+    margin-right: 3.313rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 5.5rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .card-one-rating img {
+        width: 50%; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one h6 {
+      font-size: 1.25rem;
+      padding-bottom: 0.938rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .comment {
+      font-size: 1.25rem;
+      padding-bottom: 3.25rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-one .author {
+      font-size: 1.375rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two {
+    width: 508px;
+    height: 345px;
+    margin-right: 3.313rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 5.5rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .card-two-rating img {
+        width: 50%; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two h6 {
+      font-size: 1.25rem;
+      padding-bottom: 0.938rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .comment {
+      font-size: 1.25rem;
+      padding-bottom: 3.25rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-two .author {
+      font-size: 1.375rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three {
+    width: 508px;
+    height: 345px; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .card-three-rating {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 5.5rem; }
+      .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .card-three-rating img {
+        width: 50%; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three h6 {
+      font-size: 1.25rem;
+      padding-bottom: 0.938rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .comment {
+      font-size: 1.25rem;
+      padding-bottom: 3.25rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-cards .testimonial-card-three .author {
+      font-size: 1.375rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating {
+    padding-top: 3.125rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating .testimonial-star {
+      width: 10%;
+      padding-right: 2.5rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating .testimonial-trust {
+      width: 10%;
+      padding-right: 2.5rem; }
+    .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-rating h3 {
+      font-size: 1.25rem; }
+  .testimonial-wrapper .testimonial-container .testimonial-content .testimonial-form {
+    padding-top: 9.125rem; }
+  .testimonial-wrapper .testimonial-container .banner-left-card {
+    padding-right: 2rem; }
+    .testimonial-wrapper .testimonial-container .banner-left-card .banner-left-text h6 {
+      font-size: 2.813rem; }
+    .testimonial-wrapper .testimonial-container .banner-left-card .card {
+      padding: 0rem 3.188rem;
+      width: 536px;
+      height: 372px; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .card-header {
+        font-size: 1.313rem;
+        padding: 2.063rem 0rem 2.813rem 0rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .dropdown {
+        padding: 1.625rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .dropdown-margin {
+        margin-bottom: 0.688rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .button {
+        padding: 1.688rem 2.313rem 1.688rem 2.313rem;
+        margin-bottom: 2.313rem;
+        margin-top: 1.563rem;
+        font-size: 1.688rem; }
+      .testimonial-wrapper .testimonial-container .banner-left-card .card .home-search-input .ui {
+        width: 100%; }
+        .testimonial-wrapper .testimonial-container .banner-left-card .card .home-search-input .ui input {
+          border-radius: 5px;
+          padding: 1.625rem; } }
+/* Footer Section */
+.footer-wrapper .footer .footer-top {
+  text-align: center; }
+.footer-wrapper .footer .footer-bottom .footer-left {
+  display: flex; }
+  .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top {
+    text-align: center; }
+    .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-title {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 600;
+      margin: 0px;
+      padding: 0px; }
+    .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-info {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 500;
+      margin: 0px;
+      padding: 0px; }
+  .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom {
+    text-align: center; }
+    .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-title {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 600;
+      margin: 0px;
+      padding: 0px; }
+    .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-info {
+      font-family: "Urbanist",sans-serif;
+      font-weight: 500;
+      margin: 0px;
+      padding: 0px; }
+.footer-wrapper .footer .footer-right .footer-right-list ul li {
+  font-family: "Urbanist",sans-serif;
+  font-weight: 700;
+  background: url(/images/next.png) no-repeat;
+  background-position: right;
+  color: #7c7d7f;
+  text-transform: uppercase; }
+  .footer-wrapper .footer .footer-right .footer-right-list ul li:hover {
+    cursor: pointer; }
+
+@media screen and (min-width: 320px) {
+  .footer-wrapper {
+    background: #f3f4f6; }
+    .footer-wrapper .footer .footer-top {
+      display: flex;
+      padding-top: 10.25rem;
+      padding-bottom: 2.375rem;
+      padding-left: 3.25rem;
+      padding-right: 3.25rem;
+      justify-content: space-between; }
+      .footer-wrapper .footer .footer-top img {
+        width: 40%; }
+      .footer-wrapper .footer .footer-top .footer-top-logo {
+        display: none; }
+    .footer-wrapper .footer .footer-top-img {
+      text-align: center; }
+      .footer-wrapper .footer .footer-top-img img {
+        width: 70%; }
+    .footer-wrapper .footer .footer-right .footer-right-list {
+      padding: 0rem 3.125rem 8.438rem 3.125rem; }
+      .footer-wrapper .footer .footer-right .footer-right-list ul li {
+        font-size: 1.031rem;
+        margin-bottom: 3.25rem; }
+    .footer-wrapper .footer .footer-bottom .footer-left {
+      padding: 0rem 1.625rem 0rem 1.625rem; }
+      .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top {
+        width: 60%; }
+        .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-title {
+          font-size: 0.938rem;
+          padding-bottom: 1.125rem; }
+        .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-info {
+          font-size: 0.625rem;
+          line-height: 1.375rem;
+          color: #65696b; }
+      .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-title {
+        font-size: 0.938rem;
+        padding-bottom: 1.125rem; }
+      .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-info {
+        font-size: 0.625rem;
+        line-height: 1.375rem;
+        padding-bottom: 1.188rem;
+        color: #65696b; }
+      .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .footer-bottom-img img {
+        width: 10%;
+        padding-bottom: 4.75rem; }
+    .footer-wrapper .footer .footer-line {
+      padding-top: 3.25rem;
+      padding-bottom: 4.375rem; } }
+@media screen and (min-width: 425px) {
+  .footer-wrapper {
+    background: #f3f4f6; }
+    .footer-wrapper .footer .footer-top {
+      padding-top: 11.583rem; }
+    .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-title {
+      font-size: 1.589rem; }
+    .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-info {
+      font-size: 0.848rem; }
+    .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .footer-top-img img {
+      width: 75%; }
+    .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-title {
+      font-size: 1.589rem; }
+    .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-info {
+      font-size: 0.848rem; }
+    .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .footer-bottom-img img {
+      width: 14%;
+      padding-bottom: 4.75rem; }
+    .footer-wrapper .footer .footer-bottom .footer-right .footer-right-list ul li {
+      font-size: 1.165rem; } }
+@media screen and (min-width: 540px) {
+  .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top {
+    width: 50%; } }
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    background: white; }
+    .footer-wrapper .footer .footer-top {
+      padding-top: 7.5rem;
+      padding-bottom: 2.25rem; }
+      .footer-wrapper .footer .footer-top img {
+        width: 35%; }
+    .footer-wrapper .footer .footer-bottom {
+      display: flex;
+      flex-direction: row; }
+      .footer-wrapper .footer .footer-bottom .footer-left {
+        width: 100%; }
+      .footer-wrapper .footer .footer-bottom .footer-right {
+        width: 50%; }
+      .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-title {
+        font-size: 1.406rem;
+        padding-bottom: 1.438rem; }
+      .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-info {
+        font-size: 0.75rem; }
+      .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .footer-top-img img {
+        width: 80%; }
+      .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-title {
+        font-size: 1.406rem;
+        padding-bottom: 1.438rem; }
+      .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-info {
+        font-size: 0.75rem;
+        padding-bottom: 1.188rem; }
+      .footer-wrapper .footer .footer-bottom .footer-right .footer-right-list {
+        padding: 0rem 3.125rem 4rem 3.125rem; }
+        .footer-wrapper .footer .footer-bottom .footer-right .footer-right-list ul li {
+          font-size: 1.031rem;
+          margin-bottom: 2.75rem; } }
+@media screen and (min-width: 1024px) {
+  .footer-wrapper {
+    background: white; }
+    .footer-wrapper .footer {
+      display: flex;
+      justify-content: center; }
+      .footer-wrapper .footer .footer-first {
+        width: 40%; }
+      .footer-wrapper .footer .footer-top {
+        padding-top: 9.474rem;
+        padding-bottom: 1.85rem;
+        display: block;
+        padding-left: 0rem;
+        padding-right: 0rem; }
+        .footer-wrapper .footer .footer-top .footer-top-google {
+          margin-right: 2.313rem; }
+        .footer-wrapper .footer .footer-top img {
+          width: 40%; }
+        .footer-wrapper .footer .footer-top .footer-top-logo {
+          display: block;
+          padding-bottom: 1.25rem; }
+      .footer-wrapper .footer .footer-bottom {
+        width: 30%;
+        padding-top: 9.474rem; }
+        .footer-wrapper .footer .footer-bottom .footer-left {
+          display: flex;
+          flex-direction: column; }
+          .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top {
+            width: 100%; }
+            .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-title {
+              font-size: 1rem;
+              padding-bottom: 0.729rem; }
+            .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-info {
+              font-size: 0.95rem;
+              padding-bottom: 0.861rem; }
+            .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .footer-top-img img {
+              width: 80%; }
+          .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom {
+            width: 100%; }
+            .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-title {
+              font-size: 1rem;
+              padding-bottom: 0.795rem;
+              padding-top: 0.5rem; }
+            .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-info {
+              font-size: 0.95rem;
+              padding-bottom: 0.629rem; }
+            .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .footer-bottom-img img {
+              width: 6%; }
+        .footer-wrapper .footer .footer-bottom .footer-right .footer-right-list {
+          padding: 0rem 3.125rem 4rem 3.125rem; }
+          .footer-wrapper .footer .footer-bottom .footer-right .footer-right-list ul li {
+            font-size: 1rem;
+            margin-bottom: 3.2rem;
+            background-position: bottom; }
+      .footer-wrapper .footer .footer-line {
+        display: none; }
+      .footer-wrapper .footer .footer-right {
+        width: 38%;
+        padding-top: 9.474rem; } }
+@media screen and (min-width: 1440px) {
+  .footer-wrapper {
+    background: white; }
+    .footer-wrapper .footer .footer-first {
+      width: 30%; }
+    .footer-wrapper .footer .footer-top {
+      padding-top: 17.75rem;
+      padding-bottom: 3.469rem; }
+      .footer-wrapper .footer .footer-top img {
+        width: 25%; }
+      .footer-wrapper .footer .footer-top .footer-top-logo {
+        padding-bottom: 2.344rem; }
+        .footer-wrapper .footer .footer-top .footer-top-logo img {
+          width: 50%; }
+    .footer-wrapper .footer .footer-bottom {
+      width: 34%;
+      padding-top: 17.75rem; }
+      .footer-wrapper .footer .footer-bottom .footer-left {
+        margin-left: 8rem; }
+        .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-title {
+          font-size: 1.125rem;
+          padding-bottom: 1.375rem; }
+        .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .left-top-info {
+          font-size: 1.125rem;
+          padding-bottom: 3.5rem; }
+        .footer-wrapper .footer .footer-bottom .footer-left .footer-left-top .footer-top-img img {
+          width: 42%; }
+        .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-title {
+          font-size: 1.125rem;
+          padding-bottom: 1.5rem;
+          padding-top: 0.5rem; }
+        .footer-wrapper .footer .footer-bottom .footer-left .footer-left-bottom .left-bottom-info {
+          font-size: 1.125rem;
+          padding-bottom: 1.188rem; }
+    .footer-wrapper .footer .footer-right {
+      width: 40%;
+      padding-top: 17.75rem;
+      padding-left: 5rem;
+      padding-right: 5rem; }
+      .footer-wrapper .footer .footer-right .footer-right-list {
+        padding: 0rem 0rem 9.375rem 6rem; }
+        .footer-wrapper .footer .footer-right .footer-right-list ul li {
+          font-size: 1.031rem;
+          margin-bottom: 3.85rem; } }
+.feature-container {
+  background: #f6f6f6; }
+
+.banner-wrapper .banner-left .banner-left-card .card .content .home-search-input .ui {
+  width: 100%; }
+  .banner-wrapper .banner-left .banner-left-card .card .content .home-search-input .ui input {
+    border-radius: 5px;
+    max-height: 61px; }
+
+.testimonial-wrapper .testimonial-content .testimonial-form .banner-left-card .card .content .home-search-input .ui {
+  width: 100%; }
+  .testimonial-wrapper .testimonial-content .testimonial-form .banner-left-card .card .content .home-search-input .ui input {
+    border-radius: 5px;
+    max-height: 61px; }
+
+/*# sourceMappingURL=home.css.map */

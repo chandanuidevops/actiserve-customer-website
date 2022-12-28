@@ -1,0 +1,147 @@
+.site-confirm-wrapper {
+  padding: 3rem 0rem;
+  .site-confirm-container {
+    padding: 0px 20px;
+    .site-success {
+      width: 100px;
+      object-fit: contain;
+      margin: 20px 0px 50px;
+    }
+    .site-confirm-title {
+      font-family: "Urbanist__semibold", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      color: $primary__dark;
+    }
+    .site-confirm-info {
+      font-family: "Urbanist", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      color: $primary__light;
+    }
+
+    .site-confirm-details {
+      margin-top: 30px;
+      h3 {
+        font-family: "Urbanist__semibold", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        color: $primary__dark;
+        padding-bottom: 15px;
+      }
+      .site-confirm-flex {
+        .site-confirm-flex-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex: 1;
+          border-bottom: 1px solid $site__border;
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+          .site-confirm-title {
+            font-family: "Urbanist__semibold", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            color: $primary__dark;
+            font-size: 16px;
+            line-height: 19px;
+          }
+          .site-confirm-sub-title {
+            font-family: "Urbanist__semibold", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            color: $primary__light;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: right;
+          }
+          .site-package-title {
+            font-family: "Urbanist__semibold", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            color: $primary__dark;
+            font-size: 16px;
+            text-align: right;
+          }
+          .site-package-sub-title {
+            font-family: "Urbanist__semibold", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            color: $primary__light;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+.site-confirm-item {
+  font-family: "Urbanist__semibold", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: $primary__dark;
+}
+.site-confirm-helper {
+  font-family: "Urbanist__semibold", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: $primary__dark;
+  text-align: center;
+}
+.site-confirm-apps {
+  display: flex;
+  justify-content:center;
+  img {
+    max-width: 170px;
+  }
+  .app-google {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-confirm-apps {
+   
+    img {
+      width: 100%;
+      max-width: 100px
+    }
+ 
+  }
+}
+@media screen and (min-width: 1024px) {
+  .site-confirm-wrapper {
+    .site-confirm-container {
+      padding: 0% 30px;
+      .site-confirm-details {
+        max-width: 60%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .site-confirm-wrapper {
+    .site-confirm-container {
+      padding: 0% 30px;
+      .site-confirm-details {
+        max-width: 60%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-confirm-wrapper {
+    .site-confirm-container {
+      .site-confirm-details {
+        max-width: 35%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

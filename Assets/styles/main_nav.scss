@@ -1,0 +1,194 @@
+.main-site-wrapper{
+    background-color: white;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.main-site-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+}
+
+.main-site-nav-logo{
+    cursor: pointer;
+}
+
+.main-site-nav-icons{
+    display: flex;
+    justify-content: flex-end;
+}
+.ico-pad{
+    margin-right: 28px;
+}
+
+.nav-icon-user:hover{
+    cursor: pointer;
+}
+
+.nav-icon-location:hover{
+    cursor: pointer;
+}
+
+.nav-icon-menu:hover{
+    cursor: pointer;
+}
+
+// Drawers
+
+.nav-login-drawer{
+    width: 30vw;
+}
+
+span.circle {
+    background: #e3e3e3;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #6e6e6e;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 30px;
+    margin-right: 5px;
+    text-align: center;
+    width: 30px;
+  }
+  .profile{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 18px;
+    margin: 15px 14px;
+  
+    h6{
+      font-family: "Urbanist__semibold",sans-serif;
+      font-weight: 600;
+      font-size:1rem ;
+    }
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+@media screen and (min-width:320px) {
+    .main-site-nav{
+        padding: 22px;
+    }
+    .main-site-nav-logo{
+        width:30%;
+    }
+    .main-site-nav-icons{
+        .nav-icon-user{
+            width: 20px;
+        }
+        .nav-icon-location{
+            width: 20px;
+        }
+        .nav-icon-menu{
+            width: 20px;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .main-site-nav{
+        padding: 0px;
+    }
+    .main-site-nav-logo{
+        width: 15%;
+    } 
+}
+
+@media screen and (min-width:1440px){
+    .ico-pad{
+        margin-right: 52px;
+    }
+    .main-site-nav-icons{
+        .nav-icon-user{
+            width: 26px;
+        }
+        .nav-icon-location{
+            width: 26px;
+        }
+        .nav-icon-menu{
+            width: 26px;
+        }
+    }
+}
+
+
+// Login Nav
+.main-site-nav-login{
+    .main-site-nav-login-links{
+        padding: 16px 32px;
+        li{
+            color: #FCBF49;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 9px 17px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            width: 200px;
+            cursor: pointer;
+            :hover{
+                background-color: #FCBF49;
+                color: white;
+                cursor: pointer;
+            }
+            a{
+                color: #FCBF49;
+                line-height: 30px;
+                font-size: 14px;
+                font-weight: 500;
+                padding: 9px 17px;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                width: 200px;
+            }
+        }
+        .inner-login-links{
+            padding: 0px 0px 0px 22px;
+            
+            :hover{
+                cursor: pointer;
+                color: white;
+            }
+            li{
+                cursor: pointer;
+                color: #FCBF49;
+                line-height: 30px;
+                font-size: 14px;
+                font-weight: 500;
+                padding: 9px 17px;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                width: 200px;
+                a{
+                    color: #FCBF49;
+                    line-height: 30px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding: 9px 17px;
+                    border-radius: 5px;
+                    transition: all 0.3s ease;
+                    width: 280px;
+                    :hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+.ui.sidebar{
+    margin: 70px 0px 0px 0px !important;
+  }

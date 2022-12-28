@@ -1,0 +1,205 @@
+.us__banner__wrapper {
+    background-image: url(../../../public/images/home/img-banner.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    .us__banner__container {
+        .us__banner__flex {
+            display: flex;
+            flex-wrap: wrap;
+
+            .banner__flex__item {
+                width: 100%;
+            }
+            .banner__video {
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                display: none;
+                order: 1;
+                padding: 0px 0px 40px;
+                .banner__video__holder {
+                    width: 90%;
+                    height: 240px;
+                }
+            }
+            .banner__card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 40px 0px;
+                .banner__card__body {
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 30px 22px;
+                    .banner__card__header {
+                        @include headerBold();
+                        font-size: 22px;
+                        line-height: 30px;
+                        padding: 0px 0px 20px;
+                    }
+                    .banner__video__holder{
+                        height: 320px;
+                        padding: 0px 0px 20px
+                    }
+                    .banner__card__info {
+                        @include headerSemiBold();
+                        font-size: 14px;
+                        line-height: 22px;
+                        margin: 0;
+                        padding: 0px 0px 20px;
+                        letter-spacing: 0.02em;
+                        color: $primary__light;
+                    }
+                    .que__counter {
+                        @include headerBoldCustom($secondary);
+                        font-size: 14px;
+                        line-height: 22px;
+                        padding: 0px 0px 10px;
+                    }
+                    .que__header {
+                        @include headerSemiBoldCustom($primary__dark);
+                        font-size: 16px;
+                        line-height: 21px;
+                        letter-spacing: 0.02em;
+                        padding: 0px 0px 15px;
+                    }
+                    .ans__box {
+                        display: flex;
+                        align-items: flex-start;
+                        padding-bottom: 8px;
+                        .ans__check__title {
+                            color: $secondary;
+                            margin-right: 10px;
+                            margin-top: 3px;
+                        }
+                        .ans__title {
+                            @include subHeaderCustom($primary__dark);
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                    .ans__btn {
+                        margin-top: 20px;
+                    }
+                    .banner__form {
+                        .form__header {
+                            @include headerSemiBoldCustom($secondary);
+                            font-size: 16px;
+                            line-height: 21px;
+                            letter-spacing: 0.02em;
+                            padding: 0px 0px 20px;
+                        }
+                        .form__input {
+                            width: 100%;
+                            padding-bottom: 10px;
+                        }
+                        .form__btn {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .us__banner__wrapper {
+        // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+        .us__banner__container {
+            .us__banner__flex {
+                flex-wrap: nowrap;
+                padding: 58px 0px;
+                .banner__video {
+                    padding: 0px;
+                    justify-content: flex-start;
+                    margin-left: 34px;
+                    order: 0;
+                    .banner__video__holder {
+                        width: 90%;
+                        height: 65%;
+                    }
+                }
+                .banner__flex__item {
+                    width: 100%;
+                }
+                .banner__card {
+                    padding: 0px;
+                    // justify-content: flex-end;
+                    margin: 0px 20px;
+                    .banner__card__body {
+                        width: 60%;
+                        .banner__form {
+                            .form__input {
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .us__banner__wrapper {
+        .us__banner__container {
+            .us__banner__flex {
+                padding: 58px 0px 58px;
+                .banner__video {
+                    margin-left: 0px;
+                    .banner__video__holder {
+                        width: 575px;
+                        height: 320px;
+                    }
+                }
+                .banner__card {
+                    margin-right: 0px;
+                    .banner__card__body {
+                        // padding: 118px 42px 138px;
+                        padding: 35px 42px;
+                        width: 686px;
+                        .banner__card__header {
+                            font-size: 24px;
+                            line-height: 38px;
+                        }
+                        .banner__card__info {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                        .banner__form {
+                            .form__input {
+                                width: 60%;
+                            }
+                            .form__header{
+                                font-size: 18px;
+                                line-height: 22px;
+                            }
+                        }
+                        .que__counter,.que__header{
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                        .ans__box{
+                            .ans__title{
+                                font-size: 16px;
+                                line-height: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .us__primary__btn {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.text-center{
+    text-align: center;
+}

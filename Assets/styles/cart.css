@@ -1,0 +1,9 @@
+.cart-wrapper {
+  padding-top: 70px; }
+  .cart-wrapper .cart-header {
+    padding: 2rem; }
+  .cart-wrapper .cart-grid .cart-segment {
+    display: flex;
+    justify-content: space-between; }
+
+/*# sourceMappingURL=cart.css.map */

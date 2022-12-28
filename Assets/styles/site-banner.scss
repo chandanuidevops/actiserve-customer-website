@@ -1,0 +1,1644 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+:root {
+  --ideal-viewport-width: 1640;
+}
+
+@function scaleValue($value) {
+  @return calc(#{$value} * (clamp(320px, 100vw, 1640px) / var(--ideal-viewport-width)));
+}
+
+.ui.button.site-nav-button {
+  background: #0d6773;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .site-banner-wrapper {
+    height: 100%;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  &__toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
+
+    .close {
+      display: none;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem;
+    position: relative;
+    li {
+      list-style: none;
+      display: none;
+      z-index: 20;
+
+      &:first-child {
+        margin-right: auto;
+        display: block;
+        font-family: "Ubuntu", sans-serif;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 18px;
+      line-height: 16px;
+      color: #2f4858;
+      font-family: "Ubuntu", sans-serif;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .nav {
+    &__menu {
+      li {
+        img {
+          padding-left: 12px;
+          width: 35%;
+        }
+      }
+    }
+
+    &__toggle {
+      .menu {
+        width: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .nav {
+    &__toggle {
+      display: none;
+    }
+
+    &__menu {
+      flex-direction: row;
+      gap: 1.5rem;
+      li {
+        display: block;
+      }
+    }
+
+    &__menu {
+      li {
+        img {
+          padding-left: 0px;
+          width: 35%;
+        }
+      }
+      li:nth-child(5) {
+        // border-right: 2px solid rgba(47, 72, 88, 0.5);
+        // padding-right: 2rem;
+        // display: flex;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav {
+    &__menu {
+      li {
+        img {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .nav {
+    &__menu {
+      gap: 1.5rem;
+      padding-right: 0rem;
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.site-banner-wrapper {
+  .site-banner-container {
+    .site-banner-content {
+      .site-banner-search {
+        .site-banner-text {
+          font-family: "Urbanist__bold", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          text-transform: lowercase;
+          color: #2f4858;
+        }
+      }
+
+      .site-banner-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+.ui.grid.site-banner-grid {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+@media only screen and (min-width: 320px) {
+  .site-banner-wrapper {
+    position: relative;
+    .site-banner-container {
+      .site-banner-content {
+        .site-banner-search {
+          padding: 0rem 1rem;
+          .site-banner-text {
+            font-size: #{scaleValue(112)};
+          }
+
+          .site-banner-search-box {
+            background: #0d6773;
+            box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04),
+              0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+            font-family: "Ubuntu", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #a0dae1;
+            position: relative;
+            z-index: 10;
+            padding-top: 2rem;
+
+            .site-banner-pattern {
+              position: absolute;
+              top: -0.4rem;
+              left: -1rem;
+              width: 10%;
+              z-index: -1;
+            }
+
+            .site-banner-top {
+              position: absolute;
+              top: -1px;
+              width: 80px;
+              color: #fe8e2c;
+              border-top: 4px solid #fe8e2c;
+            }
+
+            h4 {
+              font-family: "Ubuntu", sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              // font-size: 12px;
+              font-size: #{scaleValue(60)};
+              line-height: #{scaleValue(120)};
+              color: #a0dae1;
+              padding-bottom: 0.8rem;
+            }
+          }
+        }
+
+        .site-banner-img {
+          img {
+            width: 80%;
+          }
+        }
+      }
+      .site-banner-scroll {
+        display: none;
+      }
+
+      .site-banner-circle {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+      }
+
+      .site-banner-top-circle {
+        position: absolute;
+        top: 0%;
+        left: 14.2%;
+        img {
+          z-index: -20;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .site-banner-wrapper {
+    .site-banner-container {
+      .site-banner-content {
+        .site-banner-search {
+          padding: 0rem 0rem;
+          .site-banner-text {
+            font-size: #{scaleValue(41)};
+          }
+          .site-banner-search-box {
+            padding-top: 0rem;
+            max-width: 90%;
+            h4 {
+              padding-bottom: 0rem;
+              padding: 1.2rem 0rem;
+            }
+            .site-banner-select {
+              padding-bottom: 0.8rem;
+            }
+          }
+        }
+        .site-banner-row-left {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .site-banner-row-right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .site-banner-scroll {
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translate(-50%, 0%);
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .site-banner-wrapper {
+    .site-banner-container {
+      .site-banner-content {
+        .site-banner-search {
+          .site-banner-search-box {
+            max-width: 85%;
+            h4 {
+              font-size: #{scaleValue(20)};
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .site-banner-wrapper {
+    .site-banner-container {
+      .site-banner-content {
+        .site-banner-search {
+          .site-banner-text {
+            // font-size: 36.2px;
+            // line-height: 46px;
+          }
+
+          .site-banner-search-box {
+            font-size: 16px;
+            line-height: 20px;
+            max-width: 380px;
+            min-height: 160px;
+            margin-top: 1rem;
+            h4 {
+              font-size: 16px;
+              line-height: 20px;
+              padding: 1.8rem 0rem;
+            }
+          }
+        }
+
+        .site-banner-img {
+          img {
+            width: 420px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Feature Start */
+.site-col-right {
+  border-right: 2px dotted #e5e5e5;
+}
+.site-feature-wrapper {
+  .site-feature-container {
+    .site-feature-col {
+      position: relative;
+      border-left: 2px dotted #e5e5e5;
+      display: block;
+      .site-feature-col-header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 0.8rem 0rem;
+      }
+      .site-feature-circle {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background: #fff6e5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 65%;
+          height: 65%;
+        }
+      }
+      h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        color: #2f4858;
+        // padding: 0.8rem 0rem;
+      }
+      p {
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        // font-size: 14px;
+        line-height: 150%;
+        color: #425466;
+        display: block;
+      }
+      .site-feature-line {
+        height: 14px;
+      }
+    }
+  }
+}
+.vertical-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 320px) {
+  .site-feature-wrapper {
+    .site-feature-container {
+      padding: 40px 0px 0px 0px;
+      .site-feature-col {
+        .site-feature-line {
+          position: absolute;
+          height: 14px;
+          top: 2.8rem;
+          left: -0.1rem;
+          border-left: 2px solid #425466;
+        }
+        h3 {
+          font-size: #{scaleValue(72)};
+          padding-left: 0.8rem;
+        }
+        p {
+          font-size: #{scaleValue(60)};
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .site-feature-wrapper {
+    .site-feature-container {
+      padding: 0px;
+      .site-feature-col {
+        .site-feature-col-header {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-top: 1rem;
+        }
+        h3 {
+          font-size: #{scaleValue(28)};
+          min-height: 45px;
+          padding-left: 0rem;
+          padding-top: 0.8rem;
+        }
+        p {
+          font-size: #{scaleValue(24)};
+        }
+        .site-feature-line {
+          top: 5.7rem;
+        }
+        // .site-feature-circle {
+        //   margin-top: 3rem;
+        // }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .site-feature-wrapper {
+    .site-feature-container {
+      .site-feature-col {
+        .site-feature-line {
+          top: 6rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .site-feature-wrapper {
+    .site-feature-container {
+      .ui.stackable.grid.site-feature-grid {
+        margin-left: 22px !important;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .site-feature-wrapper {
+    .site-feature-container {
+      .site-feature-col {
+        .site-feature-col-header {
+          padding-top: 3rem;
+        }
+        h3 {
+          min-height: 0px;
+          font-size: #{scaleValue(24)};
+        }
+        p {
+          // font-size: 1.4rem;
+          font-size: #{scaleValue(20)};
+          max-width: 80%;
+        }
+        .site-feature-line {
+          top: 8.2rem;
+        }
+      }
+    }
+  }
+}
+/* Feature End */
+
+/* Footer Start */
+.site-footer-wrapper {
+  .site-footer-container {
+    .site-footer-col-one {
+      ul li {
+        cursor: pointer;
+      }
+      ul li:nth-child(n + 2) {
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 2rem;
+        color: #73738d;
+      }
+      ul li:nth-child(1) {
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1.8rem;
+        color: #2f4858;
+      }
+    }
+
+    .site-footer-col-two,
+    .site-footer-col-three {
+      h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 13px;
+        color: #2f4858;
+      }
+      p {
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1.6rem;
+        color: #73738d;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .site-footer-wrapper {
+    background: #f9fafb;
+    .site-footer-container {
+      .site-footer-col-one {
+        ul li:nth-child(1) {
+          font-size: #{scaleValue(76)};
+          padding-bottom: 0.4rem;
+        }
+        ul li:nth-child(n + 2) {
+          font-size: #{scaleValue(52)};
+        }
+      }
+      .site-footer-col-three {
+        h3 {
+          font-size: #{scaleValue(76)};
+        }
+        .site-footer-app-links {
+          padding: 0.8rem 0rem;
+          img {
+            width: 30%;
+          }
+          img:nth-child(1) {
+            margin-right: 10px;
+          }
+        }
+
+        .site-footer-payment {
+          img {
+            width: 70%;
+          }
+        }
+      }
+      .site-footer-col-two,
+      .site-footer-col-three {
+        h3 {
+          font-size: #{scaleValue(76)};
+          padding-bottom: 0.4rem;
+        }
+        p {
+          font-size: #{scaleValue(52)};
+        }
+      }
+      .site-footer-col-two {
+        div:nth-child(1) {
+          padding-bottom: 1.2rem;
+        }
+      }
+      .site-footer-logo {
+        margin-top: 2.75rem;
+        img {
+          width: 50%;
+          padding: 2.5rem 0rem 1rem 0rem;
+        }
+        .site-footer-text {
+          font-family: "Ubuntu", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11.0889px;
+          line-height: 13px;
+          color: #73738d;
+          padding-bottom: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .site-footer-wrapper {
+    background: #f9fafb;
+    .site-footer-container {
+      .site-footer-col-one {
+        ul li:nth-child(1) {
+          font-size: #{scaleValue(76)};
+          padding-bottom: 1rem;
+        }
+      }
+      .site-footer-col-three {
+        .site-footer-app-links {
+          padding: 1rem 0rem;
+        }
+      }
+      .site-footer-col-two,
+      .site-footer-col-three {
+        h3 {
+          padding-bottom: 1rem;
+        }
+      }
+      .site-footer-col-two {
+        div:nth-child(1) {
+          padding-bottom: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .site-footer-wrapper {
+    .site-footer-container {
+      .site-footer-col-one {
+        ul li:nth-child(1) {
+          font-size: #{scaleValue(38)};
+          padding-bottom: 0.4rem;
+        }
+        ul li:nth-child(n + 2) {
+          font-size: #{scaleValue(26)};
+        }
+      }
+      .site-footer-col-three {
+        h3 {
+          font-size: #{scaleValue(38)};
+        }
+      }
+      .site-footer-col-two,
+      .site-footer-col-three {
+        h3 {
+          font-size: #{scaleValue(38)};
+        }
+        p {
+          font-size: #{scaleValue(26)};
+        }
+      }
+      .site-footer-content {
+        padding-top: 6rem;
+      }
+      .site-footer-logo {
+        padding-top: 3rem;
+        img {
+          width: 30%;
+        }
+        .site-footer-text {
+          font-size: 11.0889px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .site-footer-wrapper {
+    .site-footer-container {
+      .site-footer-logo {
+        padding-top: 5rem;
+        img {
+          width: 20%;
+        }
+      }
+      .site-footer-col-one {
+        ul li:nth-child(1) {
+          font-size: #{scaleValue(28)};
+          padding-bottom: 0.4rem;
+        }
+        ul li:nth-child(n + 2) {
+          font-size: #{scaleValue(18)};
+        }
+      }
+      .site-footer-col-three {
+        h3 {
+          font-size: #{scaleValue(28)};
+        }
+      }
+      .site-footer-col-two,
+      .site-footer-col-three {
+        h3 {
+          font-size: #{scaleValue(28)};
+        }
+        p {
+          font-size: #{scaleValue(18)};
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .site-footer-wrapper {
+    .site-footer-container {
+      padding: 3rem;
+
+      .site-footer-logo {
+        img {
+          width: 15%;
+        }
+        .site-footer-text {
+          font-size: 11.0889px;
+        }
+      }
+      .site-footer-col-three {
+        .site-footer-app-links {
+          padding: 1rem 0rem;
+        }
+      }
+      .site-footer-col-one {
+        ul li:nth-child(1) {
+          font-size: #{scaleValue(22)};
+          padding-bottom: 0.4rem;
+        }
+        ul li:nth-child(n + 2) {
+          font-size: #{scaleValue(16)};
+        }
+      }
+      .site-footer-col-three {
+        h3 {
+          font-size: #{scaleValue(22)};
+        }
+      }
+      .site-footer-col-two,
+      .site-footer-col-three {
+        h3 {
+          font-size: #{scaleValue(22)};
+        }
+        p {
+          font-size: #{scaleValue(16)};
+        }
+      }
+    }
+  }
+}
+/* Footer End */
+
+/* How Start */
+.site-how-wrapper {
+  .site-how-container {
+    position: relative;
+    .site-how-transparent {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      h1 {
+        font-family: "Urbanist__bold", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 70%;
+        letter-spacing: -0.05em;
+        color: #f5f9fa;
+      }
+    }
+
+    .site-how-header {
+      h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #2f4858;
+
+        span {
+          color: #5537dc;
+        }
+      }
+
+      .site-how-text {
+        width: 50%;
+        margin: 0 auto;
+        p {
+          font-family: "Ubuntu", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 150%;
+          color: #425466;
+        }
+      }
+    }
+
+    .site-how-card {
+      .site-how-grid-one,
+      .site-how-grid-two,
+      .site-how-grid-three,
+      .site-how-grid-four {
+        position: relative;
+        h2 {
+          font-family: "Ubuntu", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          color: #2f4858;
+        }
+        p {
+          font-family: "Ubuntu", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 150%;
+          color: #425466;
+          padding-top: 1rem;
+        }
+      }
+
+      .site-how-grid-btn {
+        .grid-btn {
+          background: #0d6773;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: #ffffff;
+        }
+        padding: 60px 0px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .site-how-wrapper {
+    padding-top: 40px;
+    .site-how-container {
+      .site-how-transparent {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      .site-how-card {
+        padding: 0rem 1rem;
+        .site-how-grid-one {
+          text-align: center;
+          border: 1px solid #0d6773;
+          border-radius: 3px;
+          margin-bottom: 38px;
+          background: white;
+          .grid-one-line {
+            width: 1px;
+            height: 220px;
+            background-color: #0d6773;
+            position: absolute;
+            bottom: -66%;
+            left: 50%;
+            z-index: -20;
+            transform: translate(-50%, -50%);
+          }
+          img {
+            width: 50%;
+          }
+        }
+        .site-how-grid-two {
+          text-align: center;
+          border: 1px solid #0d6773;
+          margin-bottom: 38px;
+          border-radius: 3px;
+          position: relative;
+          background: white;
+          .grid-two-line {
+            width: 1px;
+            height: 220px;
+            background-color: #0d6773;
+            position: absolute;
+            bottom: -66%;
+            left: 50%;
+            z-index: -20;
+            transform: translate(-50%, -50%);
+          }
+          img {
+            width: 50%;
+          }
+        }
+        .site-how-grid-three {
+          text-align: center;
+          border: 1px solid #0d6773;
+          border-radius: 5px;
+          margin-bottom: 38px;
+          position: relative;
+          background: white;
+          .grid-three-line {
+            width: 1px;
+            height: 220px;
+            background-color: #0d6773;
+            position: absolute;
+            bottom: -66%;
+            left: 50%;
+            z-index: -20;
+            transform: translate(-50%, -50%);
+          }
+          img {
+            width: 50%;
+          }
+        }
+        .site-how-grid-four {
+          text-align: center;
+          border: 1px solid #0d6773;
+          border-radius: 5px;
+          position: relative;
+          background: white;
+          img {
+            width: 50%;
+          }
+        }
+      }
+      .site-how-header {
+        h3 {
+          font-size: #{scaleValue(86)};
+          padding-bottom: 1.5rem;
+        }
+
+        .site-how-text {
+          width: 100%;
+          padding-bottom: 40px;
+          p {
+            font-size: #{scaleValue(72)};
+            max-width: 85%;
+            margin: 0 auto;
+          }
+        }
+      }
+      .ui.grid > * {
+        padding-left: 0rem;
+        padding-right: 0rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-how-wrapper {
+    .site-how-container {
+      padding-top: 2.4rem;
+      .site-how-transparent {
+        top: 3%;
+      }
+      .site-how-card {
+        .site-how-grid-one,
+        .site-how-grid-two,
+        .site-how-grid-three,
+        .site-how-grid-four {
+          img {
+            width: 80%;
+          }
+        }
+      }
+
+      .site-how-card {
+        .site-how-grid-one {
+          text-align: left;
+          max-height: 250px;
+          border: 0px;
+          margin-bottom: 0px;
+          .grid-one-col {
+            &::before {
+              content: "";
+              height: 66%;
+              position: absolute;
+              width: 36px;
+              bottom: -0.5%;
+              left: 0;
+              border-bottom-left-radius: 72px;
+              border-left: 2px dotted #425466;
+              border-bottom: 2px dotted #425466;
+            }
+          }
+          .site-how-card-one-desc {
+            padding-top: 3rem;
+            padding-left: 2rem;
+            position: relative;
+          }
+          h2 {
+            position: relative;
+            &::before {
+              content: "#1";
+              width: 100%;
+              position: absolute;
+              left: -21%;
+              top: -16%;
+              font-family: "Ubuntu", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 150%;
+              color: #0d6773;
+            }
+          }
+          .grid-one-line {
+            display: none;
+          }
+        }
+        .site-how-grid-two {
+          text-align: left;
+          max-height: 250px;
+          border: 0px;
+          margin-bottom: 0px;
+          .site-how-card-two-desc {
+            padding-top: 3rem;
+            padding-left: 1rem;
+          }
+          .grid-two-col {
+            &::before {
+              content: "";
+              width: 90%;
+              height: 62px;
+              position: absolute;
+              left: 34px;
+              top: 0px;
+              border-top-right-radius: 30px;
+              border-top: 2px dotted #425466;
+            }
+            &::after {
+              content: "";
+              width: 85%;
+              height: 45px;
+              position: absolute;
+              left: 49px;
+              bottom: 0px;
+              border-bottom-right-radius: 29px;
+              border-bottom: 2px dotted #425466;
+            }
+          }
+          .grid-two-col-img {
+            &::before {
+              content: "";
+              height: 54%;
+              position: absolute;
+              left: -1px;
+              top: 84px;
+              border-left: 2px dotted #425466;
+            }
+          }
+          h2 {
+            position: relative;
+            &::before {
+              content: "#2";
+              width: 100%;
+              position: absolute;
+              left: -21%;
+              top: -16%;
+              font-family: "Ubuntu", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 150%;
+              color: #0d6773;
+            }
+          }
+          .grid-two-line {
+            display: none;
+          }
+        }
+        .site-how-grid-three {
+          text-align: left;
+          max-height: 250px;
+          border: 0px;
+          margin-bottom: 0px;
+          .site-how-card-three-desc {
+            padding-top: 3rem;
+            padding-left: 2rem;
+          }
+          .grid-three-col {
+            &::before {
+              content: "";
+              width: 15%;
+              height: 75px;
+              position: absolute;
+              left: 0px;
+              top: -2px;
+              border-top-left-radius: 30px;
+              border-top: 2px dotted #425466;
+            }
+            &::after {
+              content: "";
+              width: 15%;
+              height: 66%;
+              position: absolute;
+              left: 0px;
+              top: 85px;
+              border-bottom-left-radius: 30px;
+              border-left: 2px dotted #425466;
+            }
+          }
+          .grid-three-line {
+            display: none;
+          }
+          h2 {
+            position: relative;
+            &::before {
+              content: "#3";
+              width: 100%;
+              position: absolute;
+              left: -21%;
+              top: -16%;
+              font-family: "Ubuntu", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 150%;
+              color: #0d6773;
+            }
+          }
+        }
+        .site-how-grid-four {
+          text-align: left;
+          max-height: 250px;
+          border: 0px;
+          margin-bottom: 0px;
+          .site-how-card-four-desc {
+            padding-top: 3rem;
+            padding-left: 2rem;
+          }
+          .grid-four-col {
+            &::before {
+              content: "";
+              width: 95%;
+              height: 35px;
+              position: absolute;
+              left: 15px;
+              top: -1px;
+              border-top-right-radius: 28px;
+              border-top: 2px dotted #425466;
+            }
+          }
+          .grid-four-col-img {
+            &::before {
+              content: "";
+              height: 70%;
+              position: absolute;
+              left: 0px;
+              top: 85px;
+              border-left: 2px dotted #425466;
+            }
+          }
+          h2 {
+            position: relative;
+            &::before {
+              content: "#4";
+              width: 100%;
+              position: absolute;
+              left: -21%;
+              top: -16%;
+              font-family: "Ubuntu", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 150%;
+              color: #0d6773;
+            }
+          }
+          .grid-four-line {
+            display: none;
+          }
+        }
+      }
+
+      .ui.grid > * {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .site-how-wrapper {
+    .site-how-container {
+      .site-how-card {
+        max-width: 800px;
+        margin: 0 auto;
+        .site-how-grid-one {
+          max-height: 100%;
+          .grid-one-col {
+            &::before {
+              content: "";
+              height: 59%;
+              position: absolute;
+              width: 36px;
+              bottom: -0.5%;
+              left: 0;
+              border-bottom-left-radius: 72px;
+              border-left: 2px dotted #425466;
+              border-bottom: 2px dotted #425466;
+            }
+          }
+          h2 {
+            &::before {
+              content: "#1";
+              width: 100%;
+              position: absolute;
+              left: -17%;
+              top: -16%;
+              font-family: "Ubuntu", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 150%;
+              color: #0d6773;
+            }
+          }
+          .site-how-card-one-desc {
+            padding-top: 6rem;
+          }
+        }
+        .site-how-grid-two {
+          max-height: 100%;
+          .site-how-card-two-desc {
+            padding-top: 6rem;
+          }
+          .grid-two-col {
+            &::before {
+              content: "";
+              width: 90%;
+              height: 62px;
+              position: absolute;
+              left: 34px;
+              top: 0px;
+              border-top-right-radius: 30px;
+              border-top: 2px dotted #425466;
+            }
+            &::after {
+              content: "";
+              width: 88%;
+              height: 45px;
+              position: absolute;
+              left: 49px;
+              bottom: 0px;
+              border-bottom-right-radius: 29px;
+              border-bottom: 2px dotted #425466;
+            }
+          }
+          .grid-two-col-img {
+            &::before {
+              content: "";
+              height: 50%;
+              position: absolute;
+              left: 0px;
+              top: 124px;
+              border-left: 2px dotted #425466;
+            }
+          }
+          h2 {
+            &::before {
+              content: "#2";
+              width: 100%;
+              position: absolute;
+              left: -14%;
+              top: -20%;
+              font-family: "Ubuntu", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 150%;
+              color: #0d6773;
+            }
+          }
+        }
+        .site-how-grid-three {
+          max-height: 100%;
+          .site-how-card-three-desc {
+            padding-top: 6rem;
+          }
+          .grid-three-col {
+            &::before {
+              content: "";
+              width: 15%;
+              height: 75px;
+              position: absolute;
+              left: 0px;
+              top: -2px;
+              border-top-left-radius: 30px;
+              border-top: 2px dotted #425466;
+            }
+            &::after {
+              content: "";
+              width: 15%;
+              height: 57%;
+              position: absolute;
+              left: 0px;
+              top: 127px;
+              border-bottom-left-radius: 30px;
+              border-left: 2px dotted #425466;
+            }
+          }
+          h2 {
+            position: relative;
+            &::before {
+              content: "#3";
+              width: 100%;
+              position: absolute;
+              left: -21%;
+              top: -16%;
+              font-family: "Ubuntu", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 150%;
+              color: #0d6773;
+            }
+          }
+        }
+        .site-how-grid-four {
+          max-height: 100%;
+          .site-how-card-four-desc {
+            padding-top: 6rem;
+          }
+          .grid-four-col {
+            &::before {
+              content: "";
+              width: 93%;
+              height: 35px;
+              position: absolute;
+              left: 22px;
+              top: 0px;
+              border-top-right-radius: 28px;
+              border-top: 2px dotted #425466;
+            }
+          }
+          .grid-four-col-img {
+            &::before {
+              content: "";
+              height: 55%;
+              position: absolute;
+              left: 0px;
+              top: 126px;
+              border-left: 2px dotted #425466;
+            }
+          }
+          h2 {
+            &::before {
+              content: "#4";
+              width: 100%;
+              position: absolute;
+              left: -21%;
+              top: -16%;
+              font-family: "Ubuntu", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 150%;
+              color: #0d6773;
+            }
+          }
+        }
+        .site-how-grid-btn {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .site-how-wrapper {
+    .site-how-container {
+      .site-how-card {
+        .site-how-grid-btn {
+          padding-bottom: 5rem;
+        }
+      }
+    }
+  }
+}
+
+.ui.grid > .column:not(.row) {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+.ui.grid + .grid {
+  margin-top: 0rem;
+}
+@media screen and (min-width: 768px) {
+  .site-how-wrapper {
+    .site-how-container {
+      .site-how-header {
+        h3 {
+          font-size: #{scaleValue(38)};
+        }
+
+        .site-how-text {
+          p {
+            font-size: #{scaleValue(30)};
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .site-how-wrapper {
+    .site-how-container {
+      padding-top: 5.5rem;
+      .site-how-transparent {
+        top: 5%;
+        h1 {
+          font-size: 8rem;
+          line-height: 40%;
+        }
+      }
+
+      .site-how-header {
+        h3 {
+          // font-size: 1.6rem;
+        }
+
+        .site-how-text {
+          width: 90%;
+          padding-bottom: 2rem;
+          p {
+            // font-size: 2rem;
+          }
+        }
+      }
+
+      // .site-how-card {
+      //   .site-how-grid-one,
+      //   .site-how-grid-two,
+      //   .site-how-grid-three,
+      //   .site-how-grid-four {
+      //     img {
+      //       width: 100%;
+      //     }
+      //   }
+      // }
+
+      .site-how-card {
+        .site-how-card-one-desc,
+        .site-how-card-two-desc,
+        .site-how-card-three-desc,
+        .site-how-card-four-desc {
+          p {
+            font-size: 1.2rem;
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+/* How End */
+
+/* Site About Start */
+.site-about-wrapper {
+  .site-about-container {
+    position: relative;
+    .site-about-transparent {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      h1 {
+        font-family: "Urbanist__bold", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 70%;
+        letter-spacing: -0.05em;
+        color: #f5f9fa;
+      }
+    }
+
+    .site-about-header {
+      h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #2f4858;
+
+        span {
+          color: #5537dc;
+        }
+      }
+
+      .site-about-text {
+        width: 50%;
+        margin: 0 auto;
+        p {
+          font-family: "Ubuntu", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 150%;
+          color: #425466;
+        }
+      }
+    }
+
+    .site-about-review {
+      padding: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .site-about-wrapper {
+    .site-about-container {
+      .site-about-transparent {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      .site-about-header {
+        h3 {
+          padding-bottom: 1.5rem;
+          font-size: #{scaleValue(86)};
+        }
+
+        .site-about-text {
+          width: 100%;
+          p {
+            font-size: #{scaleValue(72)};
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-about-wrapper {
+    .site-about-container {
+      position: relative;
+
+      .site-about-header {
+        .site-about-text {
+          padding-bottom: 4rem;
+          p {
+            font-size: #{scaleValue(30)};
+            padding-bottom: 1rem;
+          }
+        }
+        h3 {
+          font-size: #{scaleValue(38)};
+        }
+      }
+      .site-about-review {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .site-review-seg {
+          max-width: 200px;
+          h4 {
+            line-height: 65px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .site-about-wrapper {
+    .site-about-container {
+      position: relative;
+      .site-about-review {
+        position: absolute;
+        // bottom: -70%;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .site-about-wrapper {
+    .site-about-container {
+      .site-about-transparent {
+        h1 {
+          font-size: 8rem;
+          line-height: 40%;
+        }
+      }
+      .site-about-header {
+        // h3 {
+        //   font-size: #{scaleValue(60)};
+        // }
+
+        .site-about-text {
+          width: 60%;
+          padding-bottom: 8.6rem;
+          // p {
+          //   font-size: 2rem;
+          // }
+        }
+      }
+
+      .site-about-review {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .site-review-seg {
+          max-width: 100%;
+          h4 {
+            line-height: 125px;
+          }
+        }
+      }
+    }
+  }
+}
+/* Site About End */

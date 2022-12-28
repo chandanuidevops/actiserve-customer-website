@@ -1,0 +1,23 @@
+// GET ALL ORDER
+export const GET_VISIT_REQUEST = "app/Vists/GET_VISIT_REQUEST";
+export const GET_VISIT_SUCCESS = "app/Vists/GET_VISIT_SUCCESS";
+export const GET_VISIT_FAILURE = "app/Vists/GET_VISIT_FAILURE";
+
+// OPEN MODAL
+export const OPEN_VISIT_ADD_MODAL = "app/Vists/OPEN_VISIT_ADD_MODAL";
+export const CLOSE_VISIT_ADD_MODAL = "app/Vists/CLOSE_VISIT_ADD_MODAL";
+
+export const OPEN_VISIT_EDIT_MODAL = "app/Vists/OPEN_VISIT_EDIT_MODAL";
+export const CLOSE_VISIT_EDIT_MODAL = "app/Vists/CLOSE_VISIT_EDIT_MODAL";
+
+// GET STAFF
+export const VISITS_GET_TRADER_STAFF = "app/Visits/GET_TRADER_STAFF";
+export const VISITS_SET_TRADER_STAFF = "app/Visits/SET_TRADER_STAFF";
+
+// GET ALL ORDER
+export const ADD_VISIT_REQUEST = "app/Vists/ADD_VISIT_REQUEST";
+export const ADD_VISIT_SUCCESS = "app/Vists/ADD_VISIT_SUCCESS";
+export const ADD_VISIT_FAILURE = "app/Vists/ADD_VISIT_FAILURE";
+
+export const VISITS_CLOSE_DELETE_MODAL = "app/Vists/VISITS_CLOSE_DELETE_MODAL";
+export const VISITS_OPEN_DELETE_MODAL = "app/Vists/VISITS_OPEN_DELETE_MODAL";

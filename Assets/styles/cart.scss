@@ -1,0 +1,12 @@
+.cart-wrapper{
+    padding-top: 70px;
+    .cart-header{
+        padding: 2rem;
+    }
+    .cart-grid{
+        .cart-segment{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.us__about__wrapper {
+    background: $site__bg__main;
+    .us__about__container {
+        .us__about__content {
+            background: $site__bg__main;
+            padding: 50px 0px;
+            .us__about__imgholder {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                margin: 0 auto;
+            }
+            .us__about__body {
+                padding: 0px 30px;
+
+                .us__about__header {
+                    @include headerBold();
+                    font-size: 22px;
+                    line-height: 30px;
+                    padding: 10px 0px 20px;
+                    text-align: center
+                }
+                .us__about__info {
+                    @include subHeaderMedium();
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .us__about__wrapper {
+        .us__about__container {
+            // clip-path: polygon(0 0, 100% 13%, 100% 87%, 0% 100%);
+            .us__about__content {
+                display: flex;
+                margin: 0 auto;
+                max-width: 80%;
+
+                padding: 84px 0px;
+                .us__about__imgholder {
+                    margin: 0;
+                    display: inline-block;
+                    height: 310px;
+                }
+                .us__about__body {
+                    display: inline-block;
+                    padding-left: 0;
+                    max-width: 55%;
+                    padding: 0;
+                    .us__about__header {
+                        padding: 10px 0px 10px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .us__about__wrapper {
+        .us__about__container {
+            .us__about__content {
+                display: flex;
+                margin: 0 auto;
+                max-width: 50%;
+                .us__about__body {
+                    display: inline-block;
+                    padding-left: 0;
+                    max-width: 75%;
+                    padding: 0;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .us__about__wrapper {
+        .us__about__container {
+            .us__about__content {
+                .us__about__body {
+                    .us__about__header {
+                        font-size: 32px;
+                        line-height: 38px;
+                    }
+                    .us__about__info {
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

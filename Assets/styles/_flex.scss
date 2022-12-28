@@ -1,0 +1,40 @@
+.flex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.column-flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+}
+
+.header-light {
+  font-family: $primary-font;
+  font-weight: 500;
+}
+
+.header-bold {
+  font-family: $primary-font;
+  font-weight: 700;
+}
+
+.text-bold {
+  font-family: $primary-font;
+  font-weight: 700;
+}
+
+.text-light {
+  font-family: $primary-font;
+  font-weight: 500;
+}

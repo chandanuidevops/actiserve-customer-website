@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /checkout
+Disallow: /confirmation
+Disallow: /thank-you
+
+# Host
+Host: https://www.urbanserve.co.uk
+
+# Sitemaps
+Sitemap: https://www.urbanserve.co.uk/sitemap.xml
+Sitemap: https://www.urbanserve.co.uk/server-sitemap.xml

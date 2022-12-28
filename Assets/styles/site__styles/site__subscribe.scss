@@ -1,0 +1,31 @@
+.site__subscribe__wrapper{
+    padding: 3rem 0rem;
+
+    .site__subscribe__container{
+        padding:15px 15px;
+        text-align: center;
+        .site__subscribe__header{
+            .subscribe__header{
+                @include headerSemiBold();
+                font-size: 24px;
+                line-height: 32px;
+                padding-bottom: 4px;
+                margin-bottom: 20px
+            }
+            .subscribe__subheader{
+                @include subHeader();
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        .subscribe__content{
+            padding:10px 0px;
+            .subscribe__header{
+                @include subHeaderCustom($primary__dark);
+                font-size: 20px;
+                margin-bottom: 20px
+            }
+        }
+
+    }
+}

@@ -1,0 +1,28 @@
+// GET ALL ORDER
+export const GET_CARDS_REQUEST = "app/CardDetails/GET_CARDS_REQUEST";
+export const GET_CARDS_SUCCESS = "app/CardDetails/GET_CARDS_SUCCESS";
+export const GET_CARDS_FAILURE = "app/CardDetails/GET_CARDS_FAILURE";
+
+
+export const EDIT_ORDER = "app/CardDetails/EDIT_ORDER";
+export const EDIT_ORDER_SUCCESS = "app/CardDetails/EDIT_ORDER_SUCCESS";
+export const EDIT_ORDER_FAILURE = "app/CardDetails/EDIT_ORDER_FAILURE";
+
+export const ATTACH_PAYMENT_METHOD = 'app/CardDetails/ATTACH_PAYMENT_METHOD';
+export const ATTACH_PAYMENT_METHOD_SUCCESS ='app/CardDetails/ATTACH_PAYMENT_METHOD_SUCCESS';
+export const ATTACH_PAYMENT_METHOD_FAILURE ='app/CardDetails/ATTACH_PAYMENT_METHOD_FAILURE';
+
+
+export const GET_CUSTOMER_CARDS = "app/CardDetails/GET_CUSTOMER_CARDS";
+export const GET_CUSTOMER_CARDS_SUCCESS = "app/CardDetails/GET_CUSTOMER_CARDS_SUCCESS";
+export const GET_CUSTOMER_CARDS_FAILURE = "app/CardDetails/GET_CUSTOMER_CARDS_FAILURE";
+
+
+export const ADD_CUSTOMER_CARD = "app/CardDetails/ADD_CUSTOMER_CARD";
+export const ADD_CUSTOMER_CARD_SUCCESS = "app/CardDetails/ADD_CUSTOMER_CARD_SUCCESS";
+export const ADD_CUSTOMER_CARD_FAILURE = "app/CardDetails/ADD_CUSTOMER_CARD_FAILURE";
+
+
+export const DELETE_CUSTOMER_CARD = "app/CardDetails/DELETE_CUSTOMER_CARD";
+export const DELETE_CUSTOMER_CARD_SUCCESS = "app/CardDetails/DELETE_CUSTOMER_CARD_SUCCESS";
+export const DELETE_CUSTOMER_CARD_FAILURE = "app/CardDetails/DELETE_CUSTOMER_CARD_FAILURE";

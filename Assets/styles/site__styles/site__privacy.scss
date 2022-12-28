@@ -1,0 +1,59 @@
+.us__privacy__content {
+    padding: 30px 15px 40px;
+    .privacy__header {
+        @include headerSemiBold();
+        font-size: 24px;
+        line-height: 42px;
+        text-decoration: underline;
+        padding: 10px 0px 15px;
+        text-underline-offset: 8px;
+    }
+    .privacy__subheader{
+        @include headerSemiBold();
+        font-size: 18px;
+        line-height: 32px;
+        padding: 10px 0px 10px;
+        color: $secondary;
+    }
+    .privacy__subheadersm{
+        @include headerSemiBold();
+        font-size: 14px;
+        line-height: 28px;
+        padding: 10px 0px 10px;
+        color: $secondary;
+    }
+    .privacy__list{
+        margin-left: 25px;
+        li{
+            list-style-type: auto;
+            margin-bottom: 10px;
+        }
+    }
+    .privacy__dot__list{
+        margin-left: 30px;
+        li{
+            list-style-type: disc;
+        }
+    }
+    .privacy__num__list{
+        li{
+            list-style-type: none;
+            margin-bottom: 10px;
+            .privacy__child__list{
+                margin-left: 35px;
+                li{
+                    list-style-type: lower-alpha !important;
+
+                }
+            }
+        }
+    }
+    
+    .privacy__info{
+        padding-left: 15px;
+    }
+    .privacy__info__bold{
+        font-family: "Urbanist__semibold", sans-serif;
+        color: $primary__dark;
+    }
+}

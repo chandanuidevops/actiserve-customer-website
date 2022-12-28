@@ -1,0 +1,12 @@
+@media screen and (min-width: 320px) {
+  .ui.fluid.input.modalInput {
+    width: 100% !important;
+    margin-right: 1rem; } }
+@media screen and (min-width: 768px) {
+  .ui.fluid.input.modalInput {
+    width: 35% !important; } }
+@media screen and (min-width: 1440px) {
+  .ui.fluid.input.modalInput {
+    width: 20% !important; } }
+
+/*# sourceMappingURL=modal.css.map */

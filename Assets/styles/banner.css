@@ -1,0 +1,214 @@
+.ld-banner-wrapper {
+  padding-top: 70px; }
+  .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 24px; }
+  .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge {
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    width: 100%; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge .ld-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold; }
+  .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #323232; }
+  .ld-banner-wrapper .ld-banner-container .ld-banner-right img {
+    width: 50%; }
+
+.list-margin-bottom {
+  padding-bottom: 1.125rem; }
+
+.badge-mr {
+  margin-right: 0.688rem; }
+
+@media screen and (min-width: 220px) {
+  .ld-banner-wrapper {
+    height: 482px; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left {
+      width: 50%; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-title {
+        font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 2.063rem;
+        padding-top: 1.25rem;
+        padding-left: 1.875rem; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-list {
+        padding-top: 1.25rem;
+        padding-left: 1.875rem; }
+        .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-list li {
+          font-size: 0.813rem;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+          background: url("../../public/images/icon-check.png") no-repeat;
+          background-size: 16px;
+          padding-left: 20px; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge {
+        padding-top: 4.625rem;
+        padding-bottom: 2.063rem;
+        margin-left: 20%; }
+        .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge .ld-star {
+          width: 50%;
+          height: 50%; }
+        .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge .ld-trust {
+          width: 50%;
+          height: 50%; }
+        .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge .ld-text {
+          font-size: 10px; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-info {
+        text-align: center;
+        position: absolute;
+        padding: 0rem 1.25rem 3.5rem 1.25rem;
+        font-size: 0.75rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-right {
+      width: 50%;
+      padding-top: 4.5rem; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-hand {
+        width: 162px;
+        height: 188px;
+        padding-right: 1rem; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-bg .ld-banner-right-logo {
+        position: absolute;
+        z-index: -1;
+        top: -4%;
+        right: -1%;
+        width: 50%; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-bg-web .ld-banner-right-logo-web {
+        display: none; } }
+@media screen and (min-width: 220px) {
+  .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-bg .ld-banner-right-logo {
+    position: absolute;
+    z-index: -1;
+    top: -6%;
+    right: -1%;
+    width: 50%; } }
+@media screen and (min-width: 375px) {
+  .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-hand {
+    width: 188px; } }
+@media screen and (min-width: 540px) {
+  .ld-banner-wrapper {
+    height: 442px; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-title {
+      padding-top: 1.8rem;
+      padding-bottom: 1.85rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-info {
+      text-align: center;
+      position: absolute;
+      padding: 0rem 1.25rem 0rem 1.25rem;
+      font-size: 0.75rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge {
+      margin-left: 30%; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-right {
+      padding-top: 2rem; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-hand {
+        width: 188px;
+        height: 188px;
+        padding-right: 1rem; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-bg .ld-banner-right-logo {
+        display: none; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-bg-web .ld-banner-right-logo-web {
+        position: absolute;
+        display: block;
+        z-index: -1;
+        top: -4%; } }
+@media screen and (min-width: 768px) {
+  .ld-banner-wrapper .ld-banner-container .ld-banner-left {
+    width: 50%; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-title {
+      padding-left: 0rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-list {
+      padding-left: 0rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-info {
+      text-align: left;
+      position: static;
+      padding: 0rem 1.25rem 0rem 1.875rem;
+      font-size: 0.75rem;
+      padding-left: 0rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge {
+      padding-left: 0rem;
+      margin-left: 0%; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge .ld-star {
+        width: 20%; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge .ld-trust {
+        width: 20%; }
+  .ld-banner-wrapper .ld-banner-container .ld-banner-right {
+    width: 50%; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-hand {
+      width: 90%;
+      height: 90%;
+      padding-right: 0rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-bg .ld-banner-right-logo {
+      display: none; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-bg-web .ld-banner-right-logo-web {
+      position: absolute;
+      display: block;
+      z-index: -1;
+      top: -2%; } }
+@media screen and (min-width: 1024px) {
+  .list-margin-bottom {
+    padding-bottom: 2.625rem; }
+
+  .ld-banner-wrapper {
+    height: 528px; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-title {
+      font-size: 1.491rem;
+      padding-bottom: 2.451rem;
+      padding-top: 2.385rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-list li {
+      font-size: 0.961rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge {
+      padding-top: 2.65rem;
+      padding-bottom: 2.253rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-info {
+      font-size: 12px; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-hand {
+      width: 100%;
+      height: 100%; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-bg-web .ld-banner-right-logo-web {
+      top: -3%;
+      width: 50%; } }
+@media screen and (min-width: 1440px) {
+  .ld-banner-wrapper {
+    height: 872px; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-title {
+      padding-top: 4.5rem;
+      padding-bottom: 4.625rem;
+      font-size: 2.813rem;
+      line-height: 42px; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-list li {
+      font-size: 1.813rem;
+      line-height: 2.188rem;
+      background-size: 28px;
+      padding-left: 46px; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-badge {
+      padding-top: 5rem;
+      padding-bottom: 4.25rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-left .ld-banner-left-info {
+      font-size: 1.25rem;
+      line-height: 2.563rem;
+      width: 80%; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-right {
+      padding-top: 5rem; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-hand {
+        width: 90%;
+        margin-left: 2rem; }
+      .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-bg-web .ld-banner-right-logo-web {
+        top: -3%;
+        width: 50%; } }
+@media screen and (min-width: 1700px) {
+  .badge-mr {
+    margin-right: 1.75rem; }
+
+  .ld-banner-wrapper .ld-banner-container .ld-banner-right {
+    padding-top: 4rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-hand {
+      width: 80%;
+      margin-left: 4rem; }
+    .ld-banner-wrapper .ld-banner-container .ld-banner-right .ld-banner-right-bg-web .ld-banner-right-logo-web {
+      top: -10%;
+      width: 50%; } }
+
+/*# sourceMappingURL=banner.css.map */

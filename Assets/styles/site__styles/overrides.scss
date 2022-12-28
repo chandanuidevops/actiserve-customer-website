@@ -1,0 +1,33 @@
+.ui.modal > .actions {
+  background: $site__bg__main;
+  padding: 1rem !important;
+}
+.MuiStepIcon-text {
+  color: '#fff !important';
+}
+.MuiStepIcon-text {
+  fill: #fff !important;
+}
+.MuiChip-root {
+  background-color: #e5f2ff !important;
+  color: #21262b !important;
+  @include headerSemiBold();
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+.slick-prev,
+.slick-next {
+  width: 25px !important;
+}
+.MuiCardContent-root:last-child {
+  padding-bottom: 1rem !important;
+}
+.MuiInputBase-input {
+  font-size: 1.1rem !important;
+  font-family: 'Urbanist', sans-serif !important;
+}
+
+.MuiInputLabel-formControl {
+  font-size: 1.1rem !important;
+  font-family: 'Urbanist', sans-serif !important;
+}

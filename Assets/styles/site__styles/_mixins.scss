@@ -1,0 +1,131 @@
+@mixin headerBold() {
+  font-family: 'Urbanist__bold', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: $primary__dark;
+}
+
+@mixin headerSemiBold() {
+  font-family: 'Urbanist__semibold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: $primary__dark;
+}
+
+@mixin subHeader() {
+  font-family: 'Urbanist', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: $primary__light;
+}
+
+@mixin subHeaderMedium() {
+  font-family: 'Urbanist', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $primary__light;
+}
+
+@mixin subHeaderSemiBold() {
+  font-family: 'Urbanist__semibold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: $primary__light;
+}
+
+/* Dynamic Color Header */
+
+@mixin headerBoldCustom($clr) {
+  font-family: 'Urbanist__bold', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: $clr;
+}
+@mixin headerSemiBoldCustom($clr) {
+  font-family: 'Urbanist__semibold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: $clr;
+}
+@mixin subHeaderCustom($clr) {
+  font-family: 'Urbanist', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: $clr;
+}
+
+/* Buttons */
+
+@mixin primaryBtn {
+  font-family: 'Urbanist__semibold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  background-color: $secondary;
+  line-height: 1.357rem;
+  letter-spacing: 0.07em;
+  color: #ffffff;
+  border: 1px solid $secondary;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+@mixin darkBtn {
+  font-family: 'Urbanist__semibold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  background-color: $primary__dark;
+  line-height: 1.357rem;
+  letter-spacing: 0.07em;
+  color: #ffffff;
+  border: 1px solid $primary__dark;
+  border-radius: 5px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  padding: 8px 16px;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexCenterBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#addon__grid {
+  max-width: 1200px;
+  margin: 30px auto;
+  width: 100%;
+  display: grid;
+  /* Define Auto Row size */
+  grid-auto-rows: 100px;
+  /*Define our columns */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+#addon__card {
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+}
+
+#addon__card:nth-child(odd) {
+  background-color: #55bbe9;
+}
+
+#addon__card:nth-child(even) {
+  background-color: #afbe29;
+}

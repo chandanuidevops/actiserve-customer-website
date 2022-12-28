@@ -1,0 +1,352 @@
+.checkout-wrapper {
+    padding-top: 70px;
+    .checkout-container {
+        .checkout-stepper {
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0rem;
+        }
+    }
+}
+
+.checkout-form-field {
+    min-height: 45px;
+}
+.ui.selection.dropdown.checkout-select {
+    margin-bottom: 12px;
+    min-height: 45px;
+}
+@media screen and (min-width: 320px) {
+    .checkout-form-field {
+        width: 100%;
+    }
+    .ui.selection.dropdown.checkout-select {
+        width: 100%;
+    }
+    .google-select {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .checkout-form-field {
+        width: 50%;
+    }
+    .ui.selection.dropdown.checkout-select {
+        width: 50%;
+    }
+    .google-select {
+        width: 50%;
+    }
+}
+
+.form-highlight {
+}
+.col-0-pad {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+.seg-margin {
+    margin-left: 1rem;
+}
+.ui.button.secondary-btn {
+    background: #e7b556;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #2f4858;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+.ui.button.primary-btn {
+    background: #0d6773;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+}
+.site-checkout-wrapper {
+    .site-checkout-container {
+        .site-checkout-grid {
+            .site-checkout-form-header {
+                padding: 1.2rem 1rem;
+                .site-checkout-header {
+                    font-family: "Ubuntu", sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #2f4858;
+                }
+                .site-checkout-caption {
+                    font-family: "Ubuntu", sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    color: #425466;
+                }
+            }
+            .site-checkout-form {
+                // background: #f4f8f9;
+                label {
+                    font-family: "Ubuntu", sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    color: #2f4858;
+                }
+            }
+            .site-checkout-form-date {
+                h3 {
+                    font-family: "Ubuntu", sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #2f4858;
+                }
+            }
+            .site-form-summary {
+                text-align: center;
+                position: relative;
+                // padding: 1.5rem;
+                .site-form-line {
+                    width: 80px;
+                    height: 8px;
+                    background-color: #fe8e2c;
+                    position: absolute;
+                    left: 8%;
+                    top: 0;
+                    z-index: 100;
+                    transform: translate(5%, 0%);
+                }
+                .site-form-pattern {
+                    position: absolute;
+                    width: 10%;
+                    left: 0;
+                    top: -2%;
+                    transform: translate(0%, 0%);
+                }
+                .site-form-summary-header {
+                    font-family: "Ubuntu", sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 19px;
+                    line-height: 22px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #2f4858;
+                }
+                .site-form-qa-title {
+                    font-family: "Ubuntu", sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: lowercase;
+                    color: #2f4858;
+                }
+                .site-form-qa-answer {
+                    font-family: "Ubuntu", sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: right;
+                    text-transform: lowercase;
+                    color: #e7b556;
+                }
+                .site-form-summary-btn {
+                    text-align: center;
+                    .ui.button.qa-btn {
+                        background: #e7b556;
+                        font-family: "Ubuntu", sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #2f4858;
+                    }
+                }
+            }
+        }
+        .site-checkout-title-chip {
+            background: #ebebeb;
+            border-radius: 50px;
+            font-family: "Ubuntu", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 135%;
+            color: #425466;
+        }
+    }
+}
+@media screen and (min-width: 320px) {
+    .site-checkout-wrapper {
+        .site-checkout-container {
+            .site-checkout-grid {
+                .site-checkout-form-header {
+                    padding: 1.2rem 1rem;
+                    .site-checkout-header {
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                    .site-checkout-caption {
+                        padding-top: 1rem;
+                        font-size: 13px;
+                        line-height: 135%;
+                    }
+                }
+                .form-mb-pad {
+                    padding: 0.9rem;
+                }
+                .date-box {
+                    width: 100%;
+                }
+                .site-form-summary {
+                    margin-top: 1rem;
+                    .site-form-line {
+                        display: none;
+                    }
+                    .site-form-pattern {
+                        display: none;
+                    }
+                    .site-form-summary-qa {
+                        padding: 2rem 1rem;
+                    }
+                    .site-form-summary-addon {
+                        padding: 2rem 1rem;
+                    }
+                    .site-form-summary-price {
+                        padding: 2rem 1rem;
+                    }
+                    .site-form-summary-bot {
+                        padding: 2rem 0rem;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .ui.button.secondary-btn {
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .site-checkout-wrapper {
+        .site-checkout-container {
+            .site-checkout-grid {
+                .site-checkout-form-header {
+                    padding: 1.6rem 1rem;
+                    .site-checkout-header {
+                        font-size: 1.2rem;
+                        line-height: 16px;
+                    }
+                    .site-checkout-caption {
+                        padding-top: 1rem;
+                        font-size: 0.9rem;
+                        line-height: 135%;
+                    }
+                }
+                .site-form-summary {
+                    padding: 1.5rem;
+                    margin-top: 0rem;
+                    .site-form-summary-qa {
+                        padding: 0rem 1rem 1rem 1rem;
+                    }
+                    .site-form-line {
+                        display: block;
+                    }
+                    .site-form-pattern {
+                        display: block;
+                    }
+                    .site-form-summary-bot {
+                        display: block;
+                    }
+                }
+                .date-box {
+                    width: 50%;
+                }
+                .site-checkout-form {
+                    padding: 2.4rem 0rem 0rem 0rem;
+                }
+            }
+        }
+    }
+    .site-form-summary-btn{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .site-checkout-wrapper {
+        .site-checkout-container {
+            .site-checkout-grid {
+                .site-checkout-form-header {
+                    padding: 2.4rem 2rem;
+                    .site-checkout-header {
+                        font-size: 1.6rem;
+                        line-height: 16px;
+                    }
+                    .site-checkout-caption {
+                        padding-top: 1rem;
+                        font-size: 1.2rem;
+                        line-height: 135%;
+                        max-width: 65%;
+                    }
+                }
+
+                .site-checkout-form {
+                    padding: 2.4rem 1rem 0rem 1rem;
+                }
+
+                .site-checkout-form-date {
+                    padding: 2.8rem 2rem 1rem 2rem;
+                    h3 {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .site-form-summary {
+                    .site-form-pattern {
+                        transform: translate(12%, 18%);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .site-checkout-wrapper {
+        .site-checkout-container {
+            .site-checkout-grid {
+                .site-form-summary {
+                    .site-form-pattern {
+                        transform: translate(-4%, 1%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .site-checkout-wrapper {
+        .site-checkout-container {
+            .site-chip-area {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .site-checkout-wrapper {
+        .site-checkout-container {
+            .site-chip-area {
+                padding: 0rem;
+            }
+        }
+    }
+}

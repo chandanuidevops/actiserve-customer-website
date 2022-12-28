@@ -1,0 +1,44 @@
+.site__category__wrapper .site__category__image__wrapper {
+  background-image: url(../../../public/site__main__images/site__category__banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+@media screen and (min-width: 120px) {
+  .site__category__wrapper .site__category__image__wrapper {
+    display: none; }
+  .site__category__wrapper .site__category__container .site__category__card {
+    width: 100%; }
+    .site__category__wrapper .site__category__container .site__category__card .site__category__grid__section .site__category__card__content {
+      border: 1px solid #DAECFF;
+      padding: 20px;
+      text-align: center; }
+      .site__category__wrapper .site__category__container .site__category__card .site__category__grid__section .site__category__card__content .category__card__segment .category__card__image {
+        text-align: center;
+        min-height: 45px;
+        max-height: 45px; }
+      .site__category__wrapper .site__category__container .site__category__card .site__category__grid__section .site__category__card__content .category__card__segment .category__card__text h4 {
+        font-family: "Urbanist", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.714rem;
+        line-height: 0.857rem;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #353535;
+        padding-top: 0.857rem; } }
+@media screen and (min-width: 768px) {
+  .site__category__wrapper .site__category__image__wrapper {
+    display: block;
+    min-height: 458px; }
+  .site__category__wrapper .site__category__container {
+    position: relative; }
+    .site__category__wrapper .site__category__container .site__category__card {
+      position: absolute;
+      width: 95%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+
+/*# sourceMappingURL=site__category.css.map */

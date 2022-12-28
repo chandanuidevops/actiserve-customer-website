@@ -1,0 +1,232 @@
+.ust__how__wrapper {
+    .ust__how__container {
+        .ust__how__header {
+            @include headerSemiBold();
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            padding: 30px 0px 20px;
+        }
+
+        .ust__how__flex {
+            padding: 30px 24px;
+            position: relative;
+            .ust__how__flexitem {
+                padding-left: 12%;
+                .ust__card__imgholder {
+                    position: relative;
+                    width: 40%;
+                    height: 40%;
+                }
+                .ust__card__header {
+                    @include subHeaderCustom($primary__dark);
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding: 15px 0px 10px;
+                }
+                .ust__card__info {
+                    @include subHeaderCustom($primary__light);
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+        .ust__timeline__square::before {
+            content: "";
+            width: 2px;
+            background: $primary__dark;
+            position: absolute;
+            left: 34px;
+            top: 44px;
+            bottom: 0;
+            right: 0;
+            height: 93%;
+        }
+
+        .ust__timeline__line::before{
+            content: '';
+            height: 9px;
+            width: 9px;
+            background: $primary__dark;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ust__how__wrapper {
+        .ust__how__container {
+            .ust__how__flex {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 50px;
+                position: relative;
+                .ust__how__flexitem {
+                    width: 50%;
+                    padding-left: 0px;
+                    .ust__card__imgholder {
+                        position: relative;
+                        width: 50%;
+                        height: 50%;
+                    }
+                    .ust__card__header {
+                        padding: 0px 0px 20px;
+                    }
+                }
+                .ust__how__flexitemsm{
+                    width: 25%;
+                }
+            }
+
+            .ust__timeline__square::before {
+                content: "";
+                width: 2px;
+                background: $primary__dark;
+                position: absolute;
+                left: 24%;
+                top: 52%;
+            }
+    
+            .ust__timeline__line::before{
+                content: '';
+                height: 9px;
+                width: 9px;
+                background: $primary__dark;
+                position: absolute;
+                left: 24%;
+                transform: translateX(-3px);
+                top: 52%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .ust__how__wrapper {
+        .ust__how__container {
+            .ust__how__flex {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 50px;
+                position: relative;
+                .ust__how__flexitem {
+                    width: 50%;
+                    padding-left: 0px;
+                    .ust__card__imgholder {
+                        position: relative;
+                        width: 50%;
+                        height: 50%;
+                    }
+                    .ust__card__header {
+                        padding: 0px 0px 20px;
+                    }
+                }
+                .ust__how__flexitemsm{
+                    width: 25%;
+                }
+            }
+
+            .ust__timeline__square::before {
+                content: "";
+                width: 2px;
+                background: $primary__dark;
+                position: absolute;
+                left: 24%;
+                top: 48%;
+            }
+    
+            .ust__timeline__line::before{
+                content: '';
+                height: 9px;
+                width: 9px;
+                background: $primary__dark;
+                position: absolute;
+                left: 24%;
+                transform: translateX(-3px);
+                top: 44%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .us__container{
+        max-width:1180px;
+        margin:auto
+    }
+    .ust__how__wrapper {
+        .ust__how__container {
+            .ust__how__header{
+                font-size: 36px;
+                line-height: 44px;
+                padding: 80px 0px 60px;
+            }
+            .ust__how__flex {
+                gap: 50px;
+                .ust__how__flexitem {
+                    width: 50%;
+                    .ust__card__imgholder {
+                        width: 45%;
+                        height: 45%;
+                    }
+                    .ust__card__header {
+                        font-size: 22px;
+                        line-height: 32px;
+                    }
+                    .ust__card__info {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+                .how__sm__flexitem {
+                    width: 35%;
+                }
+                .how__lg__flexitem {
+                    width: 75%;
+                    padding-left: 50px;
+                }
+                .ust__how__flexitemsm{
+                    width: 15%;
+                }
+            }
+            .ust__timeline__square::before {
+                content: "";
+                left: 16%;
+                top: 64%;
+            }
+    
+            .ust__timeline__line::before{
+                left: 16%;
+                top: 62%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 567px) {
+
+    .ust__how__wrapper {
+        .ust__how__container {
+     
+    
+            .ust__how__flex {
+              
+                .ust__how__flexitem {
+                    padding-left: 12%;
+                    .ust__card__imgholder {
+                        position: relative;
+                        width: 20%;
+                        height: 20%;
+                    }
+          
+             
+                }
+            }
+     
+        }
+    }
+}

@@ -1,0 +1,16 @@
+
+
+export const GET_BLOGS_LISTING = 'app/Blogs/GET_BLOGS_LISTING';
+export const GET_BLOGS_LISTING_SUCCESS = 'app/Blogs/GET_BLOGS_LISTING_SUCCESS';
+export const GET_BLOGS_LISTING_FAILURE =
+  'app/Blogs/GET_BLOGS_LISTING_FAILURE';
+
+  export const GET_LATEST_BLOGS = 'app/Blogs/GET_LATEST_BLOGS';
+export const GET_LATEST_BLOGS_SUCCESS = 'app/Blogs/GET_LATEST_BLOGS_SUCCESS';
+export const GET_LATEST_BLOGS_FAILURE =
+  'app/Blogs/GET_LATEST_BLOGS_FAILURE';
+
+  export const GET_SINGLE_BLOGS = 'app/Blogs/GET_SINGLE_BLOGS';
+  export const GET_SINGLE_BLOGS_SUCCESS = 'app/Blogs/GET_SINGLE_BLOGS_SUCCESS';
+  export const GET_SINGLE_BLOGS_FAILURE =
+    'app/Blogs/GET_SINGLE_BLOGS_FAILURE';

@@ -1,0 +1,1273 @@
+/* About Section */
+.about-cm-wrapper {
+  background: $highlight;
+  .about-cm-container {
+    .about-cm-title {
+      font-family: $primary-font;
+      font-weight: 700;
+      color: white;
+    }
+    .about-cm-info {
+      font-family: $primary-font;
+      font-weight: 500;
+      color: white;
+      margin: 0px;
+    }
+    .about-cm-button {
+      // width: 434px;
+      font-family: $primary-font;
+      font-weight: 600;
+      background: transparent;
+      border: 2px solid white;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .about-cm-one {
+      display: flex;
+    }
+  }
+}
+@media screen and (min-width: 320px) {
+  .about-cm-container {
+    .about-cm-one {
+      flex-direction: column;
+      text-align: center;
+      .about-cm-info {
+        padding: 0rem 1.25rem 0rem 1.25rem;
+      }
+      .about-cm-button {
+        font-size: 0.75rem;
+      }
+      .about-cm-one-img {
+        img {
+          width: 100%;
+          padding-top: 2.875rem;
+          z-index: 10;
+        }
+      }
+    }
+    .about-cm-content {
+      .about-cm-title {
+        padding: 4.75rem 0rem 2.5rem 0rem;
+        font-size: 1.313rem;
+      }
+      .about-cm-info {
+        font-size: 0.75rem;
+        padding-bottom: 3.25rem;
+      }
+      .about-cm-button {
+        min-width: 270px;
+        padding: 15px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 540px) {
+  .about-cm-container {
+    .about-cm-one {
+      .about-cm-content {
+        .about-cm-info {
+          font-size: 1rem;
+        }
+        .about-cm-button {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-cm-wrapper {
+    // min-height: 400px;
+    // max-height: 400px;
+    height: 840px;
+    .about-cm-container {
+      .about-cm-one {
+        flex-direction: row;
+        text-align: left;
+        position: relative;
+        .about-cm-content {
+          width: 50%;
+
+          .about-cm-title {
+            padding: 2.75rem 0rem 1.5rem 0rem;
+          }
+          .about-cm-info {
+            padding: 0;
+            width: 100%;
+            padding: 0rem 0rem 1.5rem 0rem;
+          }
+          .about-cm-button {
+            display: block;
+          }
+        }
+        .about-cm-one-img {
+          img {
+            width: 50%;
+            position: absolute;
+            right: -5%;
+            top: -40%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width: 1024px) {
+  .about-cm-wrapper {
+    height: 1028px;
+    .about-cm-container {
+      .about-cm-one {
+        .about-cm-content {
+          width: 50%;
+          .about-cm-title {
+            // 34.5px
+            font-size: 1.594rem;
+            // 98px 32px
+            padding: 4.594rem 0rem 1.5rem 0rem;
+          }
+          .about-cm-info {
+            //22.5
+            font-size: 1.055rem;
+            // 42px
+            padding-bottom: 1.969rem;
+          }
+          .about-cm-button {
+            font-size: 1.2rem;
+            padding: 1.438rem 0rem 1.438rem 0rem;
+            min-width: 332px;
+          }
+        }
+        .about-cm-one-img {
+          width: 50%;
+          img {
+            width: 42%;
+            right: 8%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width: 1440px) {
+  .about-cm-wrapper {
+    height: 1356px;
+    .about-cm-container {
+      .about-cm-one {
+        .about-cm-content {
+          .about-cm-title {
+            // 34.5px
+            font-size: 2.109rem;
+            // 98px 32px
+            padding: 5.297rem 0rem 1.406rem 0rem;
+          }
+          .about-cm-info {
+            width: 71%;
+            //22.5
+            font-size: 1.172rem;
+            // 42px
+            padding-bottom: 2.906rem;
+          }
+          .about-cm-button {
+            padding: 1.438rem 0rem 1.438rem 0rem;
+            font-size: 0.938rem;
+            min-width: 324px;
+          }
+        }
+        .about-cm-one-img {
+          img {
+            width: 38%;
+            right: 10%;
+            top: -48%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width: 1700px) {
+  .about-cm-wrapper {
+    height: 1834px;
+    .about-cm-container {
+      .about-cm-one {
+        .about-cm-content {
+          .about-cm-title {
+            // 34.5px
+            font-size: 2.813rem;
+            // 98px 32px
+            padding: 7.063rem 0rem 1.875rem 0rem;
+          }
+          .about-cm-info {
+            //22.5
+            font-size: 1.563rem;
+            // 42px
+            padding-bottom: 3.875rem;
+          }
+          .about-cm-button {
+            padding: 1.438rem 0rem 1.438rem 0rem;
+            font-size: 1.25rem;
+            min-width: 432px;
+          }
+        }
+        .about-cm-one-img {
+          img {
+            width: 35%;
+            right: 13%;
+            top: -45%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Testimonial Section */
+.testimonial-cm-wrapper {
+  background: $primary-color;
+  .testimonial-cm-container {
+    .testimonial-cm-content {
+      h1 {
+        font-family: $primary-font;
+        font-weight: 700;
+        color: #fff;
+      }
+      .testimonial-cm-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .testimonial-cm-card-one {
+          background: white;
+          border-radius: 5px;
+          h6 {
+            font-family: $primary-font;
+            font-weight: 700;
+          }
+          .comment {
+            font-family: $primary-font;
+            font-weight: 500;
+          }
+          .author {
+            font-family: $primary-font;
+            font-weight: 500;
+          }
+          .card-one-rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            span {
+              font-family: $primary-font;
+              font-weight: 500;
+              color: #b1b3b5;
+            }
+          }
+        }
+        .testimonial-cm-card-two {
+          background: white;
+          border-radius: 5px;
+          h6 {
+            font-family: $primary-font;
+            font-weight: 700;
+          }
+          .comment {
+            font-family: $primary-font;
+            font-weight: 500;
+          }
+          .author {
+            font-family: $primary-font;
+            font-weight: 500;
+          }
+          .card-two-rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            span {
+              font-family: $primary-font;
+              font-weight: 500;
+              color: #b1b3b5;
+            }
+          }
+        }
+        .testimonial-cm-card-three {
+          background: white;
+          border-radius: 5px;
+          h6 {
+            font-family: $primary-font;
+            font-weight: 700;
+          }
+          .comment {
+            font-family: $primary-font;
+            font-weight: 500;
+          }
+          .author {
+            font-family: $primary-font;
+            font-weight: 500;
+          }
+          .card-three-rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            span {
+              font-family: $primary-font;
+              font-weight: 500;
+              color: #b1b3b5;
+            }
+          }
+        }
+      }
+      h3 {
+        font-family: $primary-font;
+        font-weight: 500;
+        .bold {
+          font-weight: 700;
+        }
+      }
+      .testimonial-cm-rating {
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+      }
+    }
+    .banner-left-card {
+      .banner-left-text {
+        position: relative;
+        h6 {
+          font-family: $primary-font;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+      .card {
+        border-radius: 5px;
+        .content {
+          padding: 0px;
+          .card-header {
+            font-family: $primary-font;
+            text-align: center;
+          }
+          .button {
+            width: 100%;
+            background: $highlight;
+            border: none;
+            border-radius: 5px;
+            font-family: $primary-font;
+            font-weight: 600;
+            color: white;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          .home-search-input {
+            .ui {
+              width: 100%;
+              input {
+                border-radius: 5px;
+                max-height: 61px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 320px) {
+  .testimonial-cm-wrapper {
+    .testimonial-cm-container {
+      position: relative;
+
+      .testimonial-cm-content {
+        h1 {
+          padding-top: 1.813rem;
+          padding-bottom: 1.375rem;
+          text-align: center;
+          //21px
+          font-size: 1rem;
+        }
+        .testimonial-cm-cards {
+          .testimonial-cm-card-one {
+            width: 136px;
+            margin-right: 0.938rem;
+            padding: 0.875rem 1.063rem;
+            h6 {
+              font-size: 0.5rem;
+            }
+            .comment {
+              font-size: 0.5rem;
+            }
+
+            .author {
+              font-size: 0.5rem;
+            }
+            .card-one-rating {
+              display: flex;
+              justify-content: space-between;
+              align-items: baseline;
+              padding-bottom: 0.538rem;
+              img {
+                width: 60%;
+              }
+              span {
+                font-size: 8px;
+              }
+            }
+          }
+          .testimonial-cm-card-two {
+            width: 136px;
+            padding: 0.875rem 1.063rem;
+            h6 {
+              font-size: 0.5rem;
+            }
+            .comment {
+              font-size: 0.5rem;
+            }
+            .author {
+              font-size: 0.5rem;
+            }
+            .card-two-rating {
+              display: flex;
+              justify-content: space-between;
+              align-items: baseline;
+              padding-bottom: 0.538rem;
+              img {
+                width: 60%;
+              }
+              span {
+                font-size: 8px;
+              }
+            }
+          }
+          .testimonial-cm-card-three {
+            display: none;
+            // width: 136px;
+          }
+        }
+        .testimonial-cm-rating {
+          justify-content: center;
+          .testimonial-cm-star {
+            display: none;
+          }
+          .testimonial-cm-trust {
+            display: none;
+          }
+          h3 {
+            text-align: center;
+            padding-top: 1.625rem;
+            padding-bottom: 2.25rem;
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .testimonial-cm-text {
+        h1 {
+          display: none;
+        }
+      }
+      .banner-left-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .banner-left-text {
+          h6 {
+            font-size: 1rem;
+            padding-top: 2.125rem;
+            padding-bottom: 13.5rem;
+          }
+        }
+        .card {
+          width: 90%;
+          padding: 0rem 1.7rem;
+          position: absolute;
+          bottom: -12%;
+          .card-header {
+            font-size: 1.116rem;
+            padding: 1.222rem 0rem 1.063rem 0rem;
+          }
+          .dropdown {
+            //17px
+            padding: 0.903rem;
+            //8px
+            margin-bottom: 0.42rem;
+          }
+          .button {
+            font-size: 0.8rem;
+            //17px
+            padding: 0.903rem 2.875rem 0.903rem 2.875rem;
+            margin-bottom: 1.438rem;
+          }
+          .home-search-input {
+            .ui {
+              input {
+                margin-bottom: 0.65rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 375px) {
+  .testimonial-cm-wrapper {
+    position: relative;
+    .testimonial-cm-container {
+      .testimonial-cm-image {
+        img {
+          width: 375px;
+          height: 375px;
+          top: -28%;
+        }
+      }
+      .testimonial-cm-content {
+        h1 {
+          text-align: center;
+          //21px
+          font-size: 1.313rem;
+        }
+        .testimonial-cm-cards {
+          .testimonial-cm-card-one {
+            width: 162px;
+            height: 116px;
+            margin-right: 0.938rem;
+            padding: 0.875rem 1.063rem;
+          }
+          .testimonial-cm-card-two {
+            width: 162px;
+            height: 116px;
+            padding: 0.875rem 1.063rem;
+          }
+        }
+      }
+      h3 {
+        text-align: center;
+        padding-top: 1.625rem;
+        padding-bottom: 2.25rem;
+        font-size: 0.8rem;
+      }
+
+      .testimonial-cm-text {
+        h1 {
+          display: none;
+        }
+      }
+      .banner-left-card {
+        .card {
+          padding: 0rem 2rem;
+          .card-header {
+            font-size: 1.313rem;
+            //23px 20px
+            padding: 1.438rem 0rem 1.25rem 0rem;
+          }
+          .dropdown {
+            padding: 1.063rem;
+            margin-bottom: 0.5rem;
+          }
+          .button {
+            // font-size: 1.125rem;
+            font-size: 1rem;
+            padding: 1.063rem 2.875rem 1.063rem 2.875rem;
+            margin-bottom: 1.438rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 425px) {
+  .testimonial-cm-wrapper {
+    position: relative;
+    .testimonial-cm-container {
+      .testimonial-cm-image {
+        img {
+          width: 425px;
+          height: 425px;
+          top: -30%;
+        }
+      }
+      .testimonial-cm-content {
+        h1 {
+          // padding-top: 15.961rem;
+          padding-bottom: 1.875rem;
+          text-align: center;
+          //21px
+          font-size: 1.313rem;
+        }
+        .testimonial-cm-cards {
+          .testimonial-cm-card-one {
+            width: 182px;
+            height: 132px;
+            margin-right: 0.938rem;
+            padding: 0.875rem 1.063rem;
+            h1 {
+              font-size: 1.2rem;
+            }
+            .comment {
+              font-size: 0.7rem;
+            }
+
+            .author {
+              font-size: 0.8rem;
+            }
+          }
+          .testimonial-cm-card-two {
+            width: 182px;
+            height: 132px;
+            padding: 0.875rem 1.063rem;
+            h1 {
+              font-size: 1rem;
+            }
+            .comment {
+              font-size: 0.7rem;
+            }
+            .author {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 540px) {
+  .testimonial-cm-wrapper {
+    position: relative;
+    .testimonial-cm-container {
+      .testimonial-cm-image {
+        img {
+          width: 540px;
+          height: 540px;
+          top: -25%;
+        }
+      }
+      .testimonial-cm-content {
+        h1 {
+          // padding-top: 26rem;
+          padding-bottom: 1.875rem;
+          text-align: center;
+          //21px
+          font-size: 1.313rem;
+        }
+        .testimonial-cm-cards {
+          .testimonial-cm-card-one {
+            width: 162px;
+            height: 100%;
+            margin-right: 0.938rem;
+            padding: 0.875rem 1.063rem;
+            h1 {
+              font-size: 1.2rem;
+            }
+            .comment {
+              font-size: 0.7rem;
+            }
+
+            .author {
+              font-size: 0.8rem;
+            }
+          }
+          .testimonial-cm-card-two {
+            width: 162px;
+            height: 100%;
+            padding: 0.875rem 1.063rem;
+            h1 {
+              font-size: 1rem;
+            }
+            .comment {
+              font-size: 0.7rem;
+            }
+            .author {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .testimonial-cm-wrapper {
+    position: relative;
+    .testimonial-cm-container {
+      .testimonial-cm-image {
+        display: block;
+        img {
+          width: 300px;
+          height: 300px;
+          top: -20%;
+        }
+      }
+      .testimonial-cm-content {
+        h1 {
+          text-align: left;
+          padding-top: 4rem;
+          padding-bottom: 1.875rem;
+          font-size: 1.131rem;
+        }
+        .testimonial-cm-cards {
+          justify-content: flex-start;
+          .testimonial-cm-card-one {
+            width: 203px;
+            height: 100%;
+            margin-right: 1.325rem;
+            h6 {
+              font-size: 0.8rem;
+            }
+            .comment {
+              font-size: 0.8rem;
+            }
+
+            .author {
+              font-size: 0.9rem;
+            }
+            .card-one-rating {
+              display: flex;
+              justify-content: space-between;
+              align-items: baseline;
+              padding-bottom: 2.125rem;
+              img {
+                width: 60%;
+              }
+            }
+          }
+          .testimonial-cm-card-two {
+            width: 203px;
+            height: 100%;
+            margin-right: 1.325rem;
+            padding: 0.875rem 1.063rem;
+            h6 {
+              font-size: 0.8rem;
+            }
+            .comment {
+              font-size: 0.8rem;
+            }
+
+            .author {
+              font-size: 0.9rem;
+            }
+            .card-two-rating {
+              display: flex;
+              justify-content: space-between;
+              align-items: baseline;
+              padding-bottom: 2.125rem;
+              img {
+                width: 60%;
+              }
+            }
+          }
+          .testimonial-cm-card-three {
+            width: 203px;
+            padding: 0.875rem 1.063rem;
+            display: block;
+            h6 {
+              font-size: 0.8rem;
+            }
+            .comment {
+              font-size: 0.8rem;
+            }
+            .author {
+              font-size: 0.9rem;
+            }
+            .card-three-rating {
+              display: flex;
+              justify-content: space-between;
+              align-items: baseline;
+              padding-bottom: 2.125rem;
+              img {
+                width: 60%;
+              }
+              span {
+                font-size: 8px;
+              }
+            }
+          }
+        }
+        .testimonial-cm-rating {
+          justify-content: flex-start;
+          align-items: flex-end;
+          padding-top: 1.25rem;
+          .testimonial-cm-star {
+            display: inline;
+            width: 20%;
+            padding-right: 1rem;
+          }
+          .testimonial-cm-trust {
+            display: inline;
+            width: 20%;
+            padding-right: 1rem;
+          }
+          h3 {
+            text-align: left;
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .testimonial-cm-form {
+        padding-top: 3.65rem;
+        .testimonial-cm-form-img {
+          width: 50%;
+          position: absolute;
+        }
+      }
+      .banner-left-card {
+        .banner-left-text {
+          h6 {
+            position: absolute;
+            right: 0;
+            bottom: -30%;
+            left: 58%;
+            margin-bottom: 5%;
+            font-size: 18px;
+            width: 30%;
+            padding-bottom: 0rem;
+          }
+        }
+        display: block;
+        padding-top: 5rem;
+        .card {
+          padding-top: 1.125rem;
+          width: 215px;
+          height: 158px;
+          position: absolute;
+          right: 9.5%;
+          top: 92%;
+          padding: 0rem 1.275rem;
+          .card-header {
+            font-size: 0.6rem;
+            padding: 0.825rem 0rem 1.125rem 0rem;
+          }
+          .dropdown {
+            //26
+            padding: 0.675rem;
+            margin-bottom: 0.275rem;
+          }
+          .button {
+            padding: 0.675rem 2.313rem 0.675rem 2.313rem;
+            margin-bottom: 0.925rem;
+            // font-size: 0.675rem; Not working!
+            font-size: 0.5rem;
+          }
+          .home-search-input {
+            .ui {
+              input {
+                margin-bottom: 0.65rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .testimonial-cm-wrapper {
+    .testimonial-cm-container {
+      .testimonial-cm-image {
+        img {
+          width: 400px;
+          height: 400px;
+          top: -20%;
+        }
+      }
+
+      .testimonial-cm-content {
+        h1 {
+          padding-top: 6.724rem;
+          padding-bottom: 1.65rem;
+          font-size: 1.5rem;
+        }
+        .testimonial-cm-cards {
+          .testimonial-cm-card-one {
+            width: 268px;
+            margin-right: 1.75rem;
+            padding: 1.625rem 1.375rem;
+            h6 {
+              font-size: 0.8rem;
+            }
+            .comment {
+              font-size: 0.8rem;
+              padding-bottom: 1.689rem;
+            }
+
+            .author {
+              font-size: 0.8rem;
+            }
+            .card-one-rating {
+              span {
+                font-size: 1.375rem;
+                line-height: 1.688rem;
+              }
+            }
+          }
+          .testimonial-cm-card-two {
+            width: 268px;
+            margin-right: 1.75rem;
+            padding: 1.625rem 1.375rem;
+            h6 {
+              font-size: 0.8rem;
+            }
+            .comment {
+              font-size: 0.8rem;
+              padding-bottom: 1.689rem;
+            }
+            .author {
+              font-size: 0.8rem;
+            }
+            .card-two-rating {
+              span {
+                font-size: 1.375rem;
+                line-height: 1.688rem;
+              }
+            }
+          }
+          .testimonial-cm-card-three {
+            width: 268px;
+            padding: 1.625rem 1.375rem;
+            h6 {
+              font-size: 0.8rem;
+            }
+            .comment {
+              font-size: 0.8rem;
+              padding-bottom: 1.689rem;
+            }
+            .author {
+              font-size: 0.8rem;
+            }
+            .card-three-rating {
+              span {
+                font-size: 1.375rem;
+                line-height: 1.688rem;
+              }
+            }
+          }
+        }
+        .testimonial-cm-rating {
+          padding-top: 1.656rem;
+          .testimonial-cm-star {
+            padding-right: 1.325rem;
+          }
+          .testimonial-cm-trust {
+            padding-right: 1.325rem;
+          }
+          h3 {
+            font-size: 1.25rem;
+          }
+        }
+      }
+
+      .banner-left-card {
+        padding-right: 1.06rem;
+        .card {
+          padding: 0rem 1.689rem;
+          width: 284px;
+          height: 200px;
+          right: 10%;
+          bottom: 0%;
+          .card-header {
+            font-size: 0.696rem;
+            padding: 1.547rem 0rem 1.491rem 0rem;
+          }
+          .dropdown {
+            //26
+            padding: 0.861rem;
+            margin-bottom: 0.364rem;
+          }
+          .button {
+            padding: 1.266rem 2.313rem 1.266rem 2.313rem;
+            margin-bottom: 1.226rem;
+            // font-size: 0.894rem;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .testimonial-cm-wrapper {
+    .testimonial-cm-container {
+      .testimonial-cm-image {
+        img {
+          width: 450px;
+          height: 450px;
+          top: -15%;
+        }
+      }
+
+      .testimonial-cm-content {
+        h1 {
+          padding-top: 9.516rem;
+          padding-bottom: 3.094rem;
+          font-size: 1.875rem;
+        }
+        .testimonial-cm-cards {
+          justify-content: flex-start;
+          .testimonial-cm-card-one {
+            width: 381px;
+            height: 256px;
+            h6 {
+              font-size: 0.938rem;
+            }
+            .comment {
+              font-size: 0.938rem;
+              padding-bottom: 2.438rem;
+            }
+
+            .author {
+              font-size: 1.031rem;
+            }
+            .card-one-rating {
+              padding-bottom: 4.125rem;
+            }
+          }
+          .testimonial-cm-card-two {
+            width: 381px;
+            height: 256px;
+            h6 {
+              font-size: 0.938rem;
+            }
+            .comment {
+              font-size: 0.938rem;
+              padding-bottom: 2.438rem;
+            }
+            .author {
+              font-size: 1.031rem;
+            }
+            .card-two-rating {
+              padding-bottom: 4.125rem;
+            }
+          }
+          .testimonial-cm-card-three {
+            width: 381px;
+            height: 256px;
+            h6 {
+              font-size: 0.938rem;
+            }
+            .comment {
+              font-size: 0.938rem;
+              padding-bottom: 2.438rem;
+            }
+            .author {
+              font-size: 1.031rem;
+            }
+            .card-three-rating {
+              padding-bottom: 4.125rem;
+            }
+          }
+        }
+        .testimonial-cm-rating {
+          padding-top: 2.344rem;
+          .testimonial-cm-star {
+            width: 15%;
+            padding-right: 1.875rem;
+          }
+          .testimonial-cm-trust {
+            width: 15%;
+            padding-right: 1.875rem;
+          }
+        }
+      }
+
+      .banner-left-card {
+        padding-right: 1.438rem;
+        .banner-left-text {
+          h6 {
+            font-size: 2.109rem;
+            line-height: 3.094rem;
+            width: 28%;
+            margin-bottom: -1%;
+          }
+        }
+        .card {
+          padding: 0rem 3.188rem;
+          width: 402px;
+          height: 279px;
+          top: 104%;
+          .card-header {
+            font-size: 0.984rem;
+            padding: 1.547rem 0rem 2.109rem 0rem;
+          }
+          .dropdown {
+            padding: 1.219rem;
+          }
+          .dropdown-margin {
+            margin-bottom: 0.516rem;
+          }
+          .button {
+            padding: 1.266rem 2.313rem 1.266rem 2.313rem;
+            margin-bottom: 1.734rem;
+            margin-top: 1.172rem;
+            font-size: 1rem;
+          }
+          .home-search-input {
+            .ui {
+              width: 100%;
+              input {
+                border-radius: 5px;
+                padding: 1.219rem;
+                margin-bottom: 0rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1700px) {
+  .testimonial-cm-wrapper {
+    .testimonial-cm-container {
+      .testimonial-cm-image {
+        img {
+          width: 600px;
+          height: 600px;
+          top: -18%;
+        }
+      }
+
+      .testimonial-cm-content {
+        h1 {
+          padding-top: 12.688rem;
+          padding-bottom: 4.125rem;
+          font-size: 2.5rem;
+        }
+        .testimonial-cm-cards {
+          .testimonial-cm-card-one {
+            width: 508px;
+            height: 345px;
+            margin-right: 3.313rem;
+            .card-one-rating {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              padding-bottom: 5.5rem;
+              img {
+                width: 50%;
+              }
+            }
+            h6 {
+              font-size: 1.25rem;
+              padding-bottom: 0.938rem;
+            }
+            .comment {
+              font-size: 1.25rem;
+              padding-bottom: 3.25rem;
+            }
+
+            .author {
+              font-size: 1.375rem;
+            }
+          }
+          .testimonial-cm-card-two {
+            width: 508px;
+            height: 345px;
+            margin-right: 3.313rem;
+            .card-two-rating {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              padding-bottom: 5.5rem;
+              img {
+                width: 50%;
+              }
+            }
+            h6 {
+              font-size: 1.25rem;
+              padding-bottom: 0.938rem;
+            }
+            .comment {
+              font-size: 1.25rem;
+              padding-bottom: 3.25rem;
+            }
+            .author {
+              font-size: 1.375rem;
+            }
+          }
+          .testimonial-cm-card-three {
+            width: 508px;
+            height: 345px;
+            .card-three-rating {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              padding-bottom: 5.5rem;
+              img {
+                width: 50%;
+              }
+            }
+            h6 {
+              font-size: 1.25rem;
+              padding-bottom: 0.938rem;
+            }
+            .comment {
+              font-size: 1.25rem;
+              padding-bottom: 3.25rem;
+            }
+            .author {
+              font-size: 1.375rem;
+            }
+          }
+        }
+        .testimonial-cm-rating {
+          padding-top: 3.125rem;
+          .testimonial-cm-star {
+            width: 10%;
+            padding-right: 2.5rem;
+          }
+          .testimonial-cm-trust {
+            width: 10%;
+            padding-right: 2.5rem;
+          }
+          h3 {
+            font-size: 1.25rem;
+          }
+        }
+        .testimonial-cm-form {
+          padding-top: 9.125rem;
+        }
+      }
+
+      .banner-left-card {
+        padding-right: 2rem;
+        .banner-left-text {
+          h6 {
+            font-size: 2.813rem;
+          }
+        }
+        .card {
+          padding: 0rem 3.188rem;
+          width: 536px;
+          height: 372px;
+          .card-header {
+            font-size: 1.313rem;
+            padding: 2.063rem 0rem 2.813rem 0rem;
+          }
+          .dropdown {
+            padding: 1.625rem;
+          }
+          .dropdown-margin {
+            margin-bottom: 0.688rem;
+          }
+          .button {
+            padding: 1.688rem 2.313rem 1.688rem 2.313rem;
+            margin-bottom: 2.313rem;
+            margin-top: 1.563rem;
+            font-size: 1.688rem;
+          }
+          .home-search-input {
+            .ui {
+              width: 100%;
+              input {
+                border-radius: 5px;
+                padding: 1.625rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

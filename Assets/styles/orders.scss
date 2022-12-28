@@ -1,0 +1,46 @@
+.site-order-sec-title {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2f4858;
+}
+
+.site-order-flow-title {
+    font-family: "Ubuntu", sans-serif;
+    font-style: bold;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2f4858;
+}
+
+.site-order-acc-card-title {
+    font-family: "Ubuntu", sans-serif;
+    font-style: bold;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2f4858;
+    padding: 0.8rem;
+}
+
+.site-order-acc-card {
+    margin: 1rem 0rem 0rem 0rem;
+}
+.site-order-acc-card-content {
+    padding: 0.5rem 1.5rem;
+}
+
+.site-ele-blur{
+    filter: blur(2px);
+}
+@media screen and (min-width: 1440px) {
+    .site-order-sec-title {
+        font-size: 1.4rem;
+    }
+    .site-order-flow-title {
+        font-size: 1.3rem;
+    }
+}

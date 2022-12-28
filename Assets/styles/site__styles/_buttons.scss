@@ -1,0 +1,14 @@
+.ui.button.location__btn {
+  @include headerSemiBold();
+  background: $secondary;
+  color: #fff;
+  width: 120px;
+  height: 36px;
+  padding: 0px;
+  border-radius: 5px;
+}
+.primary_btn {
+  @include headerSemiBold();
+  background: $secondary;
+  color: #fff;
+}

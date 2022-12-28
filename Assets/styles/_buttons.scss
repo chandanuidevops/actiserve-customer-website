@@ -1,0 +1,42 @@
+.us__primary__btn {
+    @include primaryBtn();
+ 
+    border-radius: 5px;
+    background: $secondary;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Urbanist__semibold", sans-serif;
+    padding: 8px 16px;
+    letter-spacing:0.07em;
+}
+
+.disabled__btn{
+    @include subHeader();
+ 
+    border-radius: 5px;
+    background: $border__light;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: $primary__faded;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Urbanist__semibold", sans-serif;
+    padding: 5px 10px;
+}
+@media screen and (min-width: 1200px) {
+    .us__primary__btn{
+        font-size: 18px;
+     
+    }
+    .disabled__btn{
+        font-size: 18px;
+      
+    }
+}

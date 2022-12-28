@@ -1,0 +1,55 @@
+.site-abt-wrapper .site-abt-container .site-abt-header {
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: capitalize; }
+.site-abt-wrapper .site-abt-container .site-abt-info {
+  font-weight: normal;
+  font-family: "Ubuntu", sans-serif;
+  text-align: left; }
+.site-abt-wrapper .site-abt-container .site-abt-content {
+  background-color: #f4f8f9;
+  margin: 1.5rem 0rem; }
+.site-abt-wrapper .site-abt-container .site-term-header {
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: capitalize;
+  text-align: left; }
+.site-abt-wrapper .site-abt-container .site-term-info {
+  font-weight: normal;
+  font-family: "Ubuntu", sans-serif;
+  text-align: left; }
+
+@media screen and (min-width: 320px) {
+  .site-abt-wrapper .site-abt-container .site-abt-header {
+    font-size: 1.2rem;
+    padding: 1.2rem 1rem 0.8rem 1rem; }
+  .site-abt-wrapper .site-abt-container .site-abt-info {
+    font-size: 1rem;
+    padding: 1.2rem 1.2rem 0.8rem 1rem; }
+  .site-abt-wrapper .site-abt-container .site-term-header {
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.2rem 0rem; }
+  .site-abt-wrapper .site-abt-container .site-term-info {
+    font-size: 0.8rem;
+    padding: 0rem 1.2rem 0.4rem 0rem; } }
+@media screen and (min-width: 1024px) {
+  .site-abt-wrapper .site-abt-container {
+    max-width: 60%;
+    margin: 0 auto; }
+    .site-abt-wrapper .site-abt-container .site-abt-who {
+      padding: 1rem; }
+    .site-abt-wrapper .site-abt-container .site-abt-how {
+      padding: 1rem; }
+    .site-abt-wrapper .site-abt-container .site-abt-our {
+      padding: 1rem; } }
+@media screen and (min-width: 1440px) {
+  .site-abt-wrapper .site-abt-container .site-abt-header {
+    font-size: 1.8rem; }
+  .site-abt-wrapper .site-abt-container .site-abt-info {
+    font-size: 1.2rem; }
+  .site-abt-wrapper .site-abt-container .site-term-header {
+    font-size: 1.4rem; }
+  .site-abt-wrapper .site-abt-container .site-term-info {
+    font-size: 1rem; } }
+
+/*# sourceMappingURL=site-about.css.map */

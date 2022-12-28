@@ -1,0 +1,87 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+.site__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px; }
+
+.site__nav__logo img {
+  z-index: 100;
+  position: relative;
+  cursor: pointer; }
+
+.site__nav__ul {
+  display: flex;
+  align-items: center; }
+  .site__nav__ul .site__nav__li__btn {
+    background: #0d6773;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 0px; }
+    .site__nav__ul .site__nav__li__btn:hover {
+      background: #0d6773;
+      color: #fff;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      border-radius: 0px; }
+
+.site__nav__ul li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2f4858; }
+
+.site__nav__ul li:not(:last-child) {
+  padding-right: 2rem; }
+
+@media screen and (min-width: 320px) {
+  .site__nav {
+    padding: 0rem 1.4rem;
+    height: 45px; }
+
+  .site__nav__ul {
+    display: none; }
+
+  .site__nav__logo img {
+    width: 35%; }
+
+  .site__nav__menu {
+    text-align: right;
+    width: 100px; } }
+@media screen and (min-width: 767px) {
+  .site__nav {
+    padding: 36px 0px; }
+
+  .site__nav__menu {
+    display: none;
+    height: 70px; }
+
+  .site__nav__logo img {
+    width: 30%; }
+
+  .site__nav__ul {
+    display: flex; } }
+@media screen and (min-width: 767px) {
+  .site__nav__logo img {
+    width: 15%; } }
+@media screen and (min-width: 1440px) {
+  .site__nav__ul li {
+    font-size: 18px; }
+
+  .site__nav__li__btn {
+    font-size: 18px; } }
+
+/*# sourceMappingURL=siteNavComp.css.map */

@@ -1,0 +1,119 @@
+.us__stepper {
+  background: white;
+  color: black;
+  display: flex;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 46px;
+  border-top: 1px solid $site__border;
+
+  .us__stepper__container {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    .steps__back {
+      position: absolute;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      padding: 0px 6px;
+      border-right: 1px solid $site__border;
+      height: 30px;
+      cursor: pointer;
+      img {
+        width: 16px;
+        height: 10px;
+      }
+      span {
+        @include headerBold();
+        font-size: 14px;
+        line-height: 17px;
+        color: $primary__light;
+      }
+      .steps__font__sm {
+        font-size: 10px;
+      }
+    }
+    .stepper__mb {
+      p {
+        @include subHeaderSemiBold();
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0;
+      }
+      h5 {
+        @include headerSemiBold();
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .stepper__item {
+      @include headerBold();
+      display: none;
+
+      padding: 0px 4px;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+
+      .steps__data__num {
+        margin-right: 8px;
+      }
+      img {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+      }
+    }
+    .steps__active {
+      color: $danger;
+    }
+    .steps__completed {
+      color: $primary__dark;
+    }
+    .steps__disabled {
+      color: $primary__faded;
+    }
+    .steps__font__sm {
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .us__stepper {
+    .us__stepper__container {
+      margin-left: auto;
+      margin-right: auto;
+      .stepper__mb {
+        display: none;
+      }
+      .stepper__item {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .us__stepper {
+    .us__stepper__container {
+      margin-left: auto;
+      margin-right: auto;
+      .stepper__item {
+        padding: 0px 18px;
+        font-size: 18px;
+        line-height: 24px;
+        img {
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+  }
+}

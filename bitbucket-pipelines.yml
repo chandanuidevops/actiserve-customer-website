@@ -1,0 +1,101 @@
+#  Template React Deploy
+
+#  This template allows you to deploy your React app to an AWS S3 bucket and invalidate the old AWS Cloudfront distribution.
+#  The workflow allows running tests, code linting and security scans on feature branches (as well as master).
+#  The react app will be validated, deployed to S3 and trigger an AWS Cloudfront distribution invalidation to refresh the CDN caches after the code is merged to master.
+
+# Prerequisites: $AWS_ACCESS_KEY_ID, $AWS_SECRET_ACCESS_KEY setup in the Deployment variables.
+# For advanced cases, please, follow examples from the pipe's:
+# README https://bitbucket.org/atlassian/aws-s3-deploy/src/master/README.md
+# README https://bitbucket.org/atlassian/aws-cloudfront-invalidate/src/master/README.md
+
+image: node:10.15.3
+
+# Workflow Configuration
+
+pipelines:
+  branches:
+    develop:
+      - parallel:
+          # - step:
+          #     name: Generate env
+          #     script:
+          #       - cp .env.development .env.production
+          - step:
+              name: Build react project
+              caches:
+                - node
+              script:
+                - rm -rf .next
+                - npm install
+                # CI=true in default variables for Bitbucket Pipelines https://support.atlassian.com/bitbucket-cloud/docs/variables-in-pipelines/
+                - CI=false npm run build
+              artifacts:
+                - out/**
+          - step:
+              name: Security Scan
+              script:
+                # Run a security scan for sensitive data.
+                # See more security tools at https://bitbucket.org/product/features/pipelines/integrations?&category=security
+                - pipe: atlassian/git-secrets-scan:0.4.3
+      - step:
+          name: Deploy to s3 bucket
+          deployment: Test
+          trigger: automatic
+          clone:
+            enabled: false
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.4.5
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: 'eu-west-2'
+                S3_BUCKET: $S3_BUCKET
+                ACL: 'public-read'
+                LOCAL_PATH: 'out'
+                NEXT_PUBLIC_APP_BACKEND_URI: $NEXT_PUBLIC_APP_BACKEND_URI
+                NEXT_PUBLIC_APP_BACKEND_TOKEN: $NEXT_PUBLIC_APP_BACKEND_TOKEN
+                NEXT_PUBLIC_APP_TOKEN: $NEXT_PUBLIC_APP_TOKEN
+                NEXT_PUBLIC_APP_MAPS_KEYS: $NEXT_PUBLIC_APP_MAPS_KEYS
+                REACT_APP_BACKEND_URI:  $REACT_APP_BACKEND_URI
+              # sync your files to S3
+    staging:
+      - parallel:
+          - step:
+              name: Build react project
+              caches:
+                - node
+              script:
+                - npm install
+                # CI=true in default variables for Bitbucket Pipelines https://support.atlassian.com/bitbucket-cloud/docs/variables-in-pipelines/
+                - CI=false npm run build
+              artifacts:
+                - out/**
+          - step:
+              name: Security Scan
+              script:
+                # Run a security scan for sensitive data.
+                # See more security tools at https://bitbucket.org/product/features/pipelines/integrations?&category=security
+                - pipe: atlassian/git-secrets-scan:0.4.3
+      - step:
+          name: Deploy to s3 bucket stage
+          deployment: Staging
+          trigger: automatic
+          clone:
+            enabled: false
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.4.5
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: 'eu-west-2'
+                S3_BUCKET: $S3_BUCKET
+                ACL: 'public-read'
+                LOCAL_PATH: 'out'
+                NEXT_PUBLIC_APP_BACKEND_URI: $NEXT_PUBLIC_APP_BACKEND_URI
+                NEXT_PUBLIC_APP_BACKEND_TOKEN: $NEXT_PUBLIC_APP_BACKEND_TOKEN
+                NEXT_PUBLIC_APP_TOKEN: $NEXT_PUBLIC_APP_TOKEN
+                NEXT_PUBLIC_APP_MAPS_KEYS: $NEXT_PUBLIC_APP_MAPS_KEYS
+                REACT_APP_BACKEND_URI: $REACT_APP_BACKEND_URI
+              # sync your files to S3
+    
